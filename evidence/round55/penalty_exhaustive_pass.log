@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+REPETITION_PENALTY_EXHAUSTIVE_PASS count=65536
+$finish called at time : 65536 ns : File "E:/suanfa_liob/LLM/llama-fpga/scala/src/test/resources/repetition_penalty_tb.sv" Line 16

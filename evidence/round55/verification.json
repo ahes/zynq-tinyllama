@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "board_validation": "cold_board_repetition_suite_validated_known_semantic_limits",
+  "frozen_round52_files_verified": 226,
+  "shared_round52_source_unchanged": true,
+  "current_baseline_round": 52,
+  "boot_sha256": "F4942B274C1CA1974EDC567992E75EFF2D48A3AF09EDBDFF3EFB91DD62DE9281",
+  "boot_bytes": 13507592,
+  "elf_sha256": "BFC07CD6ECA2C8B72A3A1A6025CBF505489FDCE40CB7B2149B3C943D6B52708F",
+  "elf_entry": "0x100000",
+  "elf_memory_end": "0x2d3260",
+  "model_base": "0x01000000",
+  "boot_payloads_verified": [
+    "frozen FSBL",
+    "Round55 PL bitstream",
+    "Round55 PS ELF"
+  ],
+  "input_history_tokens": 256,
+  "max_output_tokens": 128,
+  "max_total_tokens": 384,
+  "hardware_configured_tokens": 1024,
+  "tokenizer_sha256": "8FE75741DA265962CCB42E4EF257816E75ECD6BD20D290FDB5ABB3FACF715326",
+  "validation_scope": "BOOT FSBL/PL/PS payload inspection and unchanged model/tokenizer identity; no board inference proof",
+  "board_evidence": "build/round55_dialogue_diagnosis_20261101/uart_board_20261101_210346.log.analysis.json"
+}

@@ -1,0 +1,41 @@
+{
+  "source": "local Hugging Face download metadata",
+  "text_file_git_blob_ids_verified": true,
+  "files": [
+    {
+      "file": "config.json",
+      "revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+      "etag": "4ea05f1bc289d48ba9b92eea2f58ad8acd3dce5d"
+    },
+    {
+      "file": "eval_results.json",
+      "revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+      "etag": "f1ffbab317a5c0582b8ee6756a3cdfeb0cf684bc"
+    },
+    {
+      "file": "generation_config.json",
+      "revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+      "etag": "768e95e5b4dada726d7631277a4a87ecbb236f70"
+    },
+    {
+      "file": "special_tokens_map.json",
+      "revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+      "etag": "492d4b2966a1763442d426d880dbc29f94906e4c"
+    },
+    {
+      "file": "tokenizer.json",
+      "revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+      "etag": "a6e931b92caff4c79c5c56282f1e89569a0ae558"
+    },
+    {
+      "file": "tokenizer.model",
+      "revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+      "etag": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347"
+    },
+    {
+      "file": "tokenizer_config.json",
+      "revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+      "etag": "fa96b85858f4053b0142a18e2b09dbe94e3fae46"
+    }
+  ]
+}

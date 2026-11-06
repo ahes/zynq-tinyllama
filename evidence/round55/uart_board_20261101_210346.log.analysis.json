@@ -1,0 +1,189 @@
+{
+  "control_and_dma_checks_passed": true,
+  "completed_answers": 10,
+  "expected_answers": 10,
+  "all_expected_commands_seen": true,
+  "error_lines": [],
+  "eos_answers": 8,
+  "length_limited_answers": 2,
+  "history_trim_messages": [],
+  "answers": [
+    {
+      "prompt": "hello?",
+      "answer": "Hello! I'm a helpful assistant, and I'd be happy to assist you with any questions or concerns you may have. Please feel free to reach out if you need anything help with. Best regards,\n\n[Your Name]",
+      "end_markers": 1,
+      "stop_reason": "eos",
+      "output_tokens": 49,
+      "legacy_loop_phrase_occurrences": 0,
+      "consecutive_repeated_span_heuristic": null
+    },
+    {
+      "prompt": "nice",
+      "answer": "I'm glad to hear that! I always try to provide helpful assistance, and I'd be happy to help you with anything. Feel free to reach out if you need any assistance or have any questions. Best regards,\n\n[Your Name]",
+      "end_markers": 1,
+      "stop_reason": "eos",
+      "output_tokens": 53,
+      "legacy_loop_phrase_occurrences": 0,
+      "consecutive_repeated_span_heuristic": null
+    },
+    {
+      "prompt": "你叫什么",
+      "answer": "答案是：你叫什么。\n\n这个问题，我们可以用一种比较简单的方法来解决：\n\n1. 首先，请你确定你正在使用的语言（英文或中文）。\n2. 然后，请你确定你想要回复的人（例如，你还需要回复哪些人？）。\n3. 最后，请你确定你想要回复",
+      "end_markers": 1,
+      "stop_reason": "length",
+      "output_tokens": 128,
+      "legacy_loop_phrase_occurrences": 0,
+      "consecutive_repeated_span_heuristic": null
+    },
+    {
+      "prompt": "用中文回答: 2+2=?",
+      "answer": "2 + 2 = ?\n\nEn español:\n\n2 + 2 = ¿?",
+      "end_markers": 1,
+      "stop_reason": "eos",
+      "output_tokens": 20,
+      "legacy_loop_phrase_occurrences": 0,
+      "consecutive_repeated_span_heuristic": null
+    },
+    {
+      "prompt": "Answer briefly: what is 2+2?",
+      "answer": "2 + 2 = 4",
+      "end_markers": 1,
+      "stop_reason": "eos",
+      "output_tokens": 7,
+      "legacy_loop_phrase_occurrences": 0,
+      "consecutive_repeated_span_heuristic": null
+    },
+    {
+      "prompt": "What is the capital of France?",
+      "answer": "The capital of France is Paris.",
+      "end_markers": 1,
+      "stop_reason": "eos",
+      "output_tokens": 7,
+      "legacy_loop_phrase_occurrences": 0,
+      "consecutive_repeated_span_heuristic": null
+    },
+    {
+      "prompt": "Write a complete C program that prints Hello World. Include stdio.h, main, printf, and return 0.",
+      "answer": "#include <stdio.h>\n\nint main() {\n    printf(\"Hello, World!\\n\");\n    return 0;\n}",
+      "end_markers": 1,
+      "stop_reason": "eos",
+      "output_tokens": 31,
+      "legacy_loop_phrase_occurrences": 0,
+      "consecutive_repeated_span_heuristic": null
+    },
+    {
+      "prompt": "Remember the word apple. Reply briefly.",
+      "answer": "Sure, I'd be happy to help you with that! Here's a brief reply:\n\nReply briefly: \"Apple\"",
+      "end_markers": 1,
+      "stop_reason": "eos",
+      "output_tokens": 31,
+      "legacy_loop_phrase_occurrences": 0,
+      "consecutive_repeated_span_heuristic": null
+    },
+    {
+      "prompt": "What word did I ask you to remember? Reply briefly.",
+      "answer": "Sure, I'd be happy to help you with that! Here's a brief reply:\n\nReply briefly: \"apple\"",
+      "end_markers": 1,
+      "stop_reason": "eos",
+      "output_tokens": 30,
+      "legacy_loop_phrase_occurrences": 0,
+      "consecutive_repeated_span_heuristic": null
+    },
+    {
+      "prompt": "List 30 useful programming tips. Explain each tip in one sentence.",
+      "answer": "1. Use the `print()` function to display values in a program:\n- Example: `print(\"Hello, World!\")`\n- Tip: This will output \"Hello, World!\" to the console.\n2. Read and understand documentation for libraries or frameworks:\n- Example: `import numpy as np`\n- Tip: This will provide information about how to use the library or framework.\n3. Write clear and concise comments in your code:\n- Example: `def my_function(x):\n    if x > 0:\n        return x**2\n    else:",
+      "end_markers": 1,
+      "stop_reason": "length",
+      "output_tokens": 128,
+      "legacy_loop_phrase_occurrences": 0,
+      "consecutive_repeated_span_heuristic": null
+    }
+  ],
+  "probes": [
+    {
+      "complete": true,
+      "healthy": true,
+      "idle_before_inference": true,
+      "last_status": "00",
+      "errors": {
+        "sticky_interr": false,
+        "sticky_decerr": false,
+        "sticky_slverr": false,
+        "axi_response_error": false
+      },
+      "counts_mod65536": {
+        "status": 0,
+        "command": 0,
+        "packet": 0,
+        "response": 0
+      },
+      "last_command_address": "00000000",
+      "last_write_address": "00000000",
+      "raw_pages": {
+        "0": [
+          "000A0000",
+          "00000000",
+          "00000000"
+        ],
+        "1": [
+          "00000000",
+          "00000000",
+          "00000000"
+        ],
+        "2": [
+          "00000000",
+          "00000000",
+          "00000000"
+        ],
+        "3": [
+          "00000000",
+          "00000000",
+          "00000000"
+        ]
+      }
+    },
+    {
+      "complete": true,
+      "healthy": true,
+      "idle_before_inference": false,
+      "last_status": "81",
+      "errors": {
+        "sticky_interr": false,
+        "sticky_decerr": false,
+        "sticky_slverr": false,
+        "axi_response_error": false
+      },
+      "counts_mod65536": {
+        "status": 43392,
+        "command": 43392,
+        "packet": 43392,
+        "response": 43392
+      },
+      "last_command_address": "35496B40",
+      "last_write_address": "35496B40",
+      "raw_pages": {
+        "0": [
+          "810AA980",
+          "35496B40",
+          "35496B40"
+        ],
+        "1": [
+          "12498F7E",
+          "95D99B31",
+          "9DF4A9B4"
+        ],
+        "2": [
+          "A980A980",
+          "A980A980",
+          "00008102"
+        ],
+        "3": [
+          "9032A8E3",
+          "97551413",
+          "9DF4A9B4"
+        ]
+      }
+    }
+  ],
+  "scope": "One cold boot, fixed10-prompt suite; repetition detector is a text heuristic; semantic review remains separate"
+}

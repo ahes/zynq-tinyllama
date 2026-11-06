@@ -1,0 +1,1439 @@
+{
+  "schema": 2,
+  "status": "independent_build_verified_cold_board_status_separate",
+  "board_validation": {
+    "status": "pending_physical_cold_boot",
+    "passed": false
+  },
+  "upstream_url": "https://github.com/adamgallas/llama-fpga",
+  "upstream_commit": "60e0cb867717bfa3a0e283f1669841e232f15d04",
+  "clean_checkout_build_verified": true,
+  "license_status": "upstream_permission_and_project_license_require_confirmation",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 409,
+      "sha256": "BF3D13D1204CD295BA7A2AB3A91ED50860BFCA767195F2113187FD8157053072"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2906,
+      "sha256": "B5DB93FC749234469B6450C1F7EFD9D815FC01400E6CE14897FBECC1EC300CAE"
+    },
+    {
+      "path": "REPRODUCTION_STATUS.json",
+      "bytes": 1951,
+      "sha256": "41735E60A7F67DAF0B2957A7F84217B8362973452B26ED661D42637BB4D71985"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "bytes": 1766,
+      "sha256": "CB10A734CA3BAFDB290083934237551CC6C83A551B222058C89E8483858CB87D"
+    },
+    {
+      "path": "board/ps7_config.tcl",
+      "bytes": 31814,
+      "sha256": "E117316150CB79D017E8EDD80C2C8E08FC833C26C1E7F6B10E60B4741FEBC6B6"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 1715,
+      "sha256": "FEC96C8409A8982D5F6981CB6F44AEA9733B330FA1AC12985F319FD89CC2F1C2"
+    },
+    {
+      "path": "docs/INDEPENDENT_BUILD.md",
+      "bytes": 4005,
+      "sha256": "4E1FB649DC5FC460E94478064EC366DBBA3EBF4FAFDB611D676423408A2412D1"
+    },
+    {
+      "path": "docs/PUBLISHING.md",
+      "bytes": 1051,
+      "sha256": "6F7C2C9FF57F2777E2DC2DC8D7230600B2D0947466354784115348C17B52C866"
+    },
+    {
+      "path": "docs/REPRODUCING.md",
+      "bytes": 226,
+      "sha256": "EDB2ACFC118379F3D8B5F780CB086E86A15F5FC10E6A7AEFFA23F5B2F6BE033D"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 2974,
+      "sha256": "A29B018F29E4FF946EA3CB3B26B73EBEDC88003288D1599D1BBB6FF0BCFAD354"
+    },
+    {
+      "path": "docs/upstream_README.md",
+      "bytes": 9560,
+      "sha256": "586E94F30767D1834F85692D572C4E0B5118581FE36B44E0A933004156237434"
+    },
+    {
+      "path": "evidence/reproduction_20261105/drc_impl.rpt",
+      "bytes": 81951,
+      "sha256": "925FA3D33E0149D2D84810DFC0419BF905F2EB6214BB1259A45962ED89A183F7"
+    },
+    {
+      "path": "evidence/reproduction_20261105/full_simulation.log",
+      "bytes": 1914,
+      "sha256": "3A591C967DCD5B15DB84464EE85419CFD309CBD5165EAAE89D09D4F6C5308C84"
+    },
+    {
+      "path": "evidence/reproduction_20261105/hardware.json",
+      "bytes": 76,
+      "sha256": "C6B7595F38F04C1A88857FD146F27399B5F9F38F60139C241869BED6C2344C41"
+    },
+    {
+      "path": "evidence/reproduction_20261105/ip_config.json",
+      "bytes": 62,
+      "sha256": "C33CC6C33BAF7D45A9150C2F79F25005E01AFF9A33FB3EB2D1C50444562FB06C"
+    },
+    {
+      "path": "evidence/reproduction_20261105/model.json",
+      "bytes": 297,
+      "sha256": "C7520131D55DA2AB480F45FCB23BBF5B45B144AA41A29048CCC854BBD10F95C3"
+    },
+    {
+      "path": "evidence/reproduction_20261105/model_build.log",
+      "bytes": 18782,
+      "sha256": "83000CA3D4CBC2BA5E58CCE1F35DF27266B5784243C47C40B3A83B0263FDF094"
+    },
+    {
+      "path": "evidence/reproduction_20261105/package.json",
+      "bytes": 1107,
+      "sha256": "E13CCE760B3D7FC04C23E57BEFDEC3870AC7AA039E447D0A8962B1109A8EB563"
+    },
+    {
+      "path": "evidence/reproduction_20261105/penalty_simulation.log",
+      "bytes": 1169,
+      "sha256": "69B008A90FFEC2BC6D2EE77D0AB07922EF794ED616FF97F71766CABD28D57F4A"
+    },
+    {
+      "path": "evidence/reproduction_20261105/project_structure.json",
+      "bytes": 162,
+      "sha256": "5C307A2E45CDE9BBAA9EB536D511F9572D78C37A97D58CD948441A46418F8300"
+    },
+    {
+      "path": "evidence/reproduction_20261105/relocation_structure.json",
+      "bytes": 162,
+      "sha256": "5C307A2E45CDE9BBAA9EB536D511F9572D78C37A97D58CD948441A46418F8300"
+    },
+    {
+      "path": "evidence/reproduction_20261105/route_status.rpt",
+      "bytes": 651,
+      "sha256": "55D626297971E265CB905B23FA5DA2D7734495ECD94675522CBA25955BF44C55"
+    },
+    {
+      "path": "evidence/reproduction_20261105/rtl.json",
+      "bytes": 256,
+      "sha256": "B1325508EA65E15D424F17EC576849F5F50C1CBB81ADF3460F31DE50E7B9EF1C"
+    },
+    {
+      "path": "evidence/reproduction_20261105/scala_generation_v2.log",
+      "bytes": 2242,
+      "sha256": "0B558AF3720B86AFC5124D1DAF34BBC25B4B567958110F6B75C753FF9A7E707F"
+    },
+    {
+      "path": "evidence/reproduction_20261105/test_scala_generation.log",
+      "bytes": 4512,
+      "sha256": "946A7426E9A56C85A3DC3AAD3956721D8B7467084627741A63F506E8927922C1"
+    },
+    {
+      "path": "evidence/reproduction_20261105/timing_impl.rpt",
+      "bytes": 35453,
+      "sha256": "96FD1E261AAD22E6BFAF47C2152765B8065D4D9C8C4A19BEAD36E4B628685BC9"
+    },
+    {
+      "path": "evidence/reproduction_20261105/utilization_impl.rpt",
+      "bytes": 12243,
+      "sha256": "B87E99EFC70E206E00CE7E4A054EABB56A3E7F1442E3FC233CD6B6149678EB5B"
+    },
+    {
+      "path": "evidence/reproduction_20261105/window_simulation.log",
+      "bytes": 9714,
+      "sha256": "7D88D86B2788FB8096E86496090E065975B752A741A48165A4345DB151EAE53D"
+    },
+    {
+      "path": "evidence/round55/DataPath_xN_reference.v",
+      "bytes": 1716821,
+      "sha256": "79F76E083A664B16F2B347586C8D8D3F53001F7CF3475FDD976A55856C5796BF"
+    },
+    {
+      "path": "evidence/round55/ROUND55_CANDIDATE.json",
+      "bytes": 1432,
+      "sha256": "AC58D63140391916F2F4749C3965B95E387ED4DFB7D7DBBD2B1ABC64CB8D0DDE"
+    },
+    {
+      "path": "evidence/round55/cpu_forced_found_continuation.json",
+      "bytes": 2353,
+      "sha256": "BB0961AD59F7252080628225EA3D85D77F7C8062FB81A3271D052DCD7CAF32B7"
+    },
+    {
+      "path": "evidence/round55/drc_impl.rpt",
+      "bytes": 81931,
+      "sha256": "5F0479C8400F833DA5D389620297DDFED8B28BC6690D0A809E5468FDF3E8AEFC"
+    },
+    {
+      "path": "evidence/round55/hardware_hashes.json",
+      "bytes": 993,
+      "sha256": "A2D31A827CA6E70951ACB1A8A1F493F3FF69165DCEF237591145DCCBD1BF6712"
+    },
+    {
+      "path": "evidence/round55/hardware_timing.json",
+      "bytes": 36,
+      "sha256": "F1916F0E6437081B9975EFF8EBE3D1C10C29C782A96815E578D2EC7B64AA4061"
+    },
+    {
+      "path": "evidence/round55/hello_token_comparison.json",
+      "bytes": 2004,
+      "sha256": "6DA018931B95CDF280990AF9DF87782E4EF5CC72E7B343336EAD70C49D7ACD6D"
+    },
+    {
+      "path": "evidence/round55/kv_comparison.json",
+      "bytes": 41102,
+      "sha256": "8F9AC97287AEAAAE082DF8F093A1506B940A6DF23F88CB09CDB2D944EF45F871"
+    },
+    {
+      "path": "evidence/round55/penalty_exhaustive_pass.log",
+      "bytes": 205,
+      "sha256": "543EF86AEF59E436C4B5D8472B89EEC8E1A8F417E2D07829BBB4BD3B30643442"
+    },
+    {
+      "path": "evidence/round55/round55_final_probe.json",
+      "bytes": 898,
+      "sha256": "00C0B131D42F6C930B069277C1F1C247FA2880E5CBCDE32517647BB0207ADA4B"
+    },
+    {
+      "path": "evidence/round55/route_status.rpt",
+      "bytes": 651,
+      "sha256": "55D626297971E265CB905B23FA5DA2D7734495ECD94675522CBA25955BF44C55"
+    },
+    {
+      "path": "evidence/round55/sampler_full_pass.log",
+      "bytes": 974,
+      "sha256": "7825ADA11A263DEE20D3F1FEC4BDAE398645523552D855958A8956FFF0B90EFC"
+    },
+    {
+      "path": "evidence/round55/sampler_window_eviction_pass.log",
+      "bytes": 8894,
+      "sha256": "A1C64CF6150E36013B71373521C52AE955E612F0F127BAC2CAABB2C943CDA4A5"
+    },
+    {
+      "path": "evidence/round55/semantic_review.json",
+      "bytes": 638,
+      "sha256": "92D86056C01F0A2D2D7EA8A024634E2D888F6FF52A104FA00A64AA4BBC2BC935"
+    },
+    {
+      "path": "evidence/round55/timing_impl.rpt",
+      "bytes": 35456,
+      "sha256": "5C3505120CCA411A642C8227718C0A1AAEEF851292AEDC346DC3932E7C872D20"
+    },
+    {
+      "path": "evidence/round55/uart_board_20261101_210346.log",
+      "bytes": 4709,
+      "sha256": "016E9A33D43E7BB32E84C8097D32FDEE3F44762A0C5BC7243226EE2260511EBD"
+    },
+    {
+      "path": "evidence/round55/uart_board_20261101_210346.log.analysis.json",
+      "bytes": 6516,
+      "sha256": "80DEBCC5C12808E5E6CDBD8F305058759CC2E11AF1B50ED5D650C9CD99BDF0C6"
+    },
+    {
+      "path": "evidence/round55/uart_board_20261101_210346.log.inputs.json",
+      "bytes": 587,
+      "sha256": "AA99522DE5F1F33050554B64166CBC921F160D584771BF05EF73141F28676280"
+    },
+    {
+      "path": "evidence/round55/utilization_impl.rpt",
+      "bytes": 12246,
+      "sha256": "E7872C40D6623A224BE8314A1960F2B8AB49B913D91AA9A22C185A1A1AFFC67C"
+    },
+    {
+      "path": "evidence/round55/verification.json",
+      "bytes": 1082,
+      "sha256": "84E64F5D11C1BD8C9214C0ED53632F65680AEEC653A129579D21997D91A3DE37"
+    },
+    {
+      "path": "hardware/IP_CONFIG_EXPECTED.json",
+      "bytes": 58370,
+      "sha256": "9A9003CE2B7A7FE27652FF589029614691B3574328CAFF771FC64FD21CA6CBF5"
+    },
+    {
+      "path": "hardware/Scripts/project_settings.tcl",
+      "bytes": 4279,
+      "sha256": "973D4A8DA6073B71D7970C988EC5DAD6CC69A6B22109E77E872EB704CF535010"
+    },
+    {
+      "path": "hardware/Scripts/verification_manifest.tcl",
+      "bytes": 548,
+      "sha256": "0788AD29FF9D988984116D6E54F337F2B29C1E91911DE6B2856041A43B5AAF4E"
+    },
+    {
+      "path": "hardware/Sources/BD/system.tcl",
+      "bytes": 48863,
+      "sha256": "F7700CE545C32BD4F2E73D679D4E8563499F77FA6BF0404A2DBB8920A92F1792"
+    },
+    {
+      "path": "hardware/Sources/IP/AxiDatamover128.tcl",
+      "bytes": 3273,
+      "sha256": "C89E0D252A97793D0AA2559B13FFF96721F38B4381B8B72208768AFF3F2B1600"
+    },
+    {
+      "path": "hardware/Sources/IP/AxiDatamover512.tcl",
+      "bytes": 3273,
+      "sha256": "57A53F2D96814C1F0C1F55A06E092CB6ADFC79398697A8713C968704852D5D49"
+    },
+    {
+      "path": "hardware/Sources/IP/fp16acc16.tcl",
+      "bytes": 3613,
+      "sha256": "7040781E22DB0FA63951A234B0B57C8C109A1EE3EAE116A24824C11ABDC186DB"
+    },
+    {
+      "path": "hardware/Sources/IP/fp16add6.tcl",
+      "bytes": 3466,
+      "sha256": "CDD27CADE78F9E62B65C264E7E823B455E16CAE8810CBD57A73E65F2324ADF9F"
+    },
+    {
+      "path": "hardware/Sources/IP/fp16add8.tcl",
+      "bytes": 3466,
+      "sha256": "24AA3ED06A6D9CDA69B41053EE8C1CE9465025052E28E4442511CF3631332FFC"
+    },
+    {
+      "path": "hardware/Sources/IP/fp16div12.tcl",
+      "bytes": 3473,
+      "sha256": "5FDE75F94BD53EC26130535C331F2BDCABF0F5A9CCDF08CCD258A14410CC26FE"
+    },
+    {
+      "path": "hardware/Sources/IP/fp16ex12.tcl",
+      "bytes": 3474,
+      "sha256": "CA4D268602005ED213C66C7B86337845B767104BECD10D17050B492FFEEB67B3"
+    },
+    {
+      "path": "hardware/Sources/IP/fp16int5d4.tcl",
+      "bytes": 3487,
+      "sha256": "E12E26A3DF9A6588E3DF0D67AE90F443A8A1E2FF63542C1A215423FEFA2D5D26"
+    },
+    {
+      "path": "hardware/Sources/IP/fp16int9d4.tcl",
+      "bytes": 3487,
+      "sha256": "3A8624C62D8BBFA71C5DA9C1B7A73FB9285BCAE386230255BEC1AD796C4778C5"
+    },
+    {
+      "path": "hardware/Sources/IP/fp16lt0.tcl",
+      "bytes": 3504,
+      "sha256": "FDB067C824902C066BE70C4B3A47780D8A292D1FBDF9786ED6AF3881AA80A577"
+    },
+    {
+      "path": "hardware/Sources/IP/fp16mul6.tcl",
+      "bytes": 3436,
+      "sha256": "D1A6D1BD5C10885CDEC007AB32C218885A85881B9D22AB928167FECB4F338FBE"
+    },
+    {
+      "path": "hardware/Sources/IP/fp16mul7s.tcl",
+      "bytes": 3369,
+      "sha256": "E9F1EF427BDE466B6ED72C2D69CD59917C9E68DE9CEFBB2B99CEC9A7478760C5"
+    },
+    {
+      "path": "hardware/Sources/IP/fp16rsqrt4.tcl",
+      "bytes": 3489,
+      "sha256": "59BBC832795BDE3C1016BF15C5150694F15C1FD9192FC5BA72100E9414A0F195"
+    },
+    {
+      "path": "hardware/Sources/IP/fp16sub8.tcl",
+      "bytes": 3471,
+      "sha256": "41038A88F1805D5E3D5D84861B8DBED3CD3EFB1BC2DD265C63277A2CEEB67D56"
+    },
+    {
+      "path": "hardware/Sources/IP/fp16toFp32.tcl",
+      "bytes": 3454,
+      "sha256": "EE6D950DD1FA80EF9ABCDAE63771BD08A8D45C06BA3C5E12A13F586719714A44"
+    },
+    {
+      "path": "hardware/Sources/IP/fp16toFp32s.tcl",
+      "bytes": 3387,
+      "sha256": "CC52193BB351BF53C6752C526089B27237F436581296A24660DA847F350C462C"
+    },
+    {
+      "path": "hardware/Sources/IP/fp16toint9d4.tcl",
+      "bytes": 3499,
+      "sha256": "8D356294D0445B580DAF7BAD69E9AF6A42DB923D42C788CD01F3FD15EFE4DDA6"
+    },
+    {
+      "path": "hardware/Sources/IP/fp32acc22.tcl",
+      "bytes": 3495,
+      "sha256": "34CE31664B24CB00707BDF8B1B9448E59AC8AD495919EB0F1042054A1D3BAD8A"
+    },
+    {
+      "path": "hardware/Sources/IP/fp32add11.tcl",
+      "bytes": 3143,
+      "sha256": "C4AD865E0DC361FDBC9A1FC4E8FC731B89E55BB25936D3360A14C8EC24A05477"
+    },
+    {
+      "path": "hardware/Sources/IP/fp32div28.tcl",
+      "bytes": 3388,
+      "sha256": "7B0E2A04607556D9E2E9EBE3C00A50F34DF0B145FE1ECFD877F58A629886C84E"
+    },
+    {
+      "path": "hardware/Sources/IP/fp32exp20.tcl",
+      "bytes": 3364,
+      "sha256": "8B903129C14520813790EAD7EEAD4A897FEC39259FCDCF53CD646E6DB7A160A6"
+    },
+    {
+      "path": "hardware/Sources/IP/fp32int16d4.tcl",
+      "bytes": 3496,
+      "sha256": "19BAAB780AAC9CB0F09B3996A806BE34780E8A89A0009050FE4DD600420EEE32"
+    },
+    {
+      "path": "hardware/Sources/IP/fp32int16d6.tcl",
+      "bytes": 3423,
+      "sha256": "993B58585D60A67E464A6DD92F10958776A5A200D473E347294C7C8F68A1A600"
+    },
+    {
+      "path": "hardware/Sources/IP/fp32lt0.tcl",
+      "bytes": 3418,
+      "sha256": "FA5CA5922A3BEA07F42EC39B142946C51FFED618E782E19BC04271B6F98F1A8C"
+    },
+    {
+      "path": "hardware/Sources/IP/fp32mul8.tcl",
+      "bytes": 3352,
+      "sha256": "E627C7152C9227CF59E1DC96E598EF0D10E39178E01AF5740346B9C076BEBC9A"
+    },
+    {
+      "path": "hardware/Sources/IP/fp32mul8s.tcl",
+      "bytes": 3319,
+      "sha256": "C8D70C15F701AB14AC58B600F9367E7CBEB027B9CD6ACAA51F37B37206E073DC"
+    },
+    {
+      "path": "hardware/Sources/IP/fp32rsqrt32.tcl",
+      "bytes": 3500,
+      "sha256": "6CDF3F566B1454988C95E9051BDF396BB2485AD3B8ED87E07F0F854F81738B49"
+    },
+    {
+      "path": "hardware/Sources/IP/fp32sub11.tcl",
+      "bytes": 3080,
+      "sha256": "DB387177780CC505B6AD613474DDF2A1020C08ADE3ED1E448725D83013A416F0"
+    },
+    {
+      "path": "hardware/Sources/IP/fp32toFp16.tcl",
+      "bytes": 3366,
+      "sha256": "3805E1F51ADC86D9A9AB5B0A8492A868F951B237835B1DED3431230353063505"
+    },
+    {
+      "path": "hardware/Sources/IP/fp32toint32d6.tcl",
+      "bytes": 3419,
+      "sha256": "677B4FDC351BDECDDC48EED0B2DC374AADC5D9DE8C3A325C72B11DB4433D57E6"
+    },
+    {
+      "path": "hardware/build.tcl",
+      "bytes": 173,
+      "sha256": "666507844D72DE56275736BF4160247AB4D6CA0BB842F1F59079EECF1C0B9172"
+    },
+    {
+      "path": "hardware/check_project.tcl",
+      "bytes": 1621,
+      "sha256": "3E01B229675D0B3D8961E1933ED0342FA7B64D96B62D042CB05703F87F63001A"
+    },
+    {
+      "path": "hardware/collect.tcl",
+      "bytes": 1154,
+      "sha256": "152CE0360F773B5436D831AF255A4AD9A2FA2D59BB3733D2B5558E0ED9864EAD"
+    },
+    {
+      "path": "hardware/implement.tcl",
+      "bytes": 700,
+      "sha256": "9379884953B3A86903907AC37BC5080933B6930AF395569037088B2C7345ED33"
+    },
+    {
+      "path": "hardware/recreate.tcl",
+      "bytes": 1504,
+      "sha256": "371DABBD691E70D9A3B761CE2B248158C31C0030E384CFD7CA173F979F17E38A"
+    },
+    {
+      "path": "llama-fpga/python/expand_gqa_to_mha.py",
+      "bytes": 2492,
+      "sha256": "F2F42FC2F13B3B2BB703914C202B2C067CAD143F7BDF782130F3C09E798F354D"
+    },
+    {
+      "path": "llama-fpga/python/export_tokenizer_bin.py",
+      "bytes": 1497,
+      "sha256": "EB2AF4EA2F8385BE1781494500AFCFF6641F73DFD7CB62576B4FA4898BB114B8"
+    },
+    {
+      "path": "llama-fpga/python/model2bin.py",
+      "bytes": 37661,
+      "sha256": "C484441089D9CAFBB0F581529E54AF59C70B53374CCDF8B6E8DA069C8EE512A6"
+    },
+    {
+      "path": "llama-fpga/scala/build.sbt",
+      "bytes": 1499,
+      "sha256": "7DE86BA38A1AE9AE2F56D21DD7C758BD4FE9A1942038AA7C08D13CFEB2C331E8"
+    },
+    {
+      "path": "llama-fpga/scala/data/sin4096quarter.txt",
+      "bytes": 24500,
+      "sha256": "6E4150721A9F88755DD38969F3BC7CA58622BB0E8E74299A32FA352B02512172"
+    },
+    {
+      "path": "llama-fpga/scala/data/sin4096quarter32.txt",
+      "bytes": 45034,
+      "sha256": "E7BD6BCCD24B535CCCA200D81FDEBDFC1E95B317F7E33E37CBD34E6E011B34B6"
+    },
+    {
+      "path": "llama-fpga/scala/project/build.properties",
+      "bytes": 19,
+      "sha256": "E1B9D7C03583B3E90906D8376068422C015A2D06DFB5A298C7BAB014D99F25B0"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/adapter/FlowGate.scala",
+      "bytes": 1628,
+      "sha256": "F49C79ED956F35283C6D94D59DB10F09CA789C34A158029BA8A27AF0A8338254"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/adapter/FlowMux.scala",
+      "bytes": 455,
+      "sha256": "B0959DEA17B30D9822A3D38CA30011E9904F43243DE2344F60477341F178EE10"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/adapter/Parallel2Serial.scala",
+      "bytes": 717,
+      "sha256": "818B3BC4109E4636259C5EFFC02D2531E4D743B27208C1FD43790A560468DEFF"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/adapter/Serial2Parallel.scala",
+      "bytes": 1510,
+      "sha256": "1997474CB8992975BE93BD9BB789CA74FA7659E3048E7246884D1A5993442F84"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/adapter/StreamFreeMux.scala",
+      "bytes": 407,
+      "sha256": "1E85206C337D12559E9CD9C990FCB02F7CFD9692A67C53FAC66F0BBA7E5F3EE4"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/adapter/TagMap.scala",
+      "bytes": 1655,
+      "sha256": "5818C55D4CC7E08E0E816B52C3ACDB8632AEE0927040F3444FC572044A17CEE0"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/attn/KvScaleZeroPacker.scala",
+      "bytes": 12077,
+      "sha256": "8CA86845045AA1E9BC4B2F9FDE1D984BE50BAF408352B936696AA75FC5EF3962"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/attn/QKMul.scala",
+      "bytes": 3963,
+      "sha256": "AC98288F839DF136C8A42860E97F089CCEF99E8B96230AF00CC1B58165249268"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/attn/SerialSafeSoftmax.scala",
+      "bytes": 6342,
+      "sha256": "7B1E2B9874513CED6A9A8A82D7C9CBA8663CC05BA375E776F32B23AF676F102D"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/attn/SerialSafeSoftmaxTest.scala",
+      "bytes": 4953,
+      "sha256": "B156D2E6E4ADE0B4330B8570C816F20FD1B73108A74CE39661854AA81E4E8A47"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/attn/SerialSoftmaxFp32.scala",
+      "bytes": 1993,
+      "sha256": "E579CE40DED059758D1EBCAAA63280AB275471A0CD887D8BC83C262AC06C0899"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/attn/SoftmaxFp32.scala",
+      "bytes": 4458,
+      "sha256": "9E9352C4FE96DCD5888E78C95E52E8F1D13E7A8E1A2B67412D5E298DAA45E487"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/busdemux/AxiBusDistributor.scala",
+      "bytes": 27098,
+      "sha256": "524E1E6412BDAAAD11FE8EAFC579ABC359E557CB674A350E9D790AD2E6CD8F0D"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/busdemux/DenseCase.scala",
+      "bytes": 1375,
+      "sha256": "C47CB0992410F4DCBAF5B17408CBEEDBD91C031358D7D78D13FE93E347C685AE"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/busdemux/KvCacheCase.scala",
+      "bytes": 2135,
+      "sha256": "E6E7B264A8409BAD5FB37ED70DF6407663BEC8DFBD7E8E9AB3089E044DD12850"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/busdemux/SparseCase.scala",
+      "bytes": 1362,
+      "sha256": "96598F5EEC23286DAF3B0A78945C02E453FDF439A809EBE22D0E3C8271B1A3FA"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/c2c/AllGatherNode.scala",
+      "bytes": 2795,
+      "sha256": "917866EF8A7AB4E9855BD05CFED1B59AE6C985FB77BA763494EF3F54B0F19526"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/c2c/AllReduce.scala",
+      "bytes": 1977,
+      "sha256": "D7F991E5646E9EF42C15A5448461BB5EF4C1A649A3152E0B69B028119AC87522"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/c2c/LowLatencyNode.scala",
+      "bytes": 2372,
+      "sha256": "65A2FE559431E99301BE428C00293BED52077868A0537F95C9DB959727DD81FA"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/c2c/Node.scala",
+      "bytes": 1115,
+      "sha256": "4702F26775E6AAFE1383C22ED2EFB8C50BC25992ADAC92A36FA0AC337363063C"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/c2c/ReduceFilter.scala",
+      "bytes": 1504,
+      "sha256": "4668AA5514178C10CEFB1AC96FAFE9A5287D5ED17C120912D7C600E47366213F"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/c2c/Reorder.scala",
+      "bytes": 1244,
+      "sha256": "042A89AD807E02E07EC1BF7CB9881B8165A5A37BEED21E0084A575B4EA5A5C5F"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/cfgGen/GenCfg.scala",
+      "bytes": 8965,
+      "sha256": "9E5E14CEDCD0053A5E23D8DCE487B419DBF5F172338CE02DB25603AB27712385"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/cfgGen/GenCfgBytes.scala",
+      "bytes": 888,
+      "sha256": "2F15848983AFF3CFED4C16C5021FF156707D90AAF917AC7D771F2713DE818620"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/cfgGen/GenMemCmd.scala",
+      "bytes": 27750,
+      "sha256": "352D14D74AB09BAFB2AFEF71FF42940D391681487E093F9290806D1A87389787"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/cfgGen/GenMemCmdLen.scala",
+      "bytes": 2547,
+      "sha256": "FC247C73B512BF4C50B93D071362DF37E1A859BEC7C6E33260A333EFAD452406"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/cfgGen/GenMemCmdLenAlign.scala",
+      "bytes": 31079,
+      "sha256": "92BE5B410FA3379FFF8DA744DD586AD251FB4A0249A2E19E442CF1CDC66A84B6"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/cfgGen/GenMemCmdSmallBurst.scala",
+      "bytes": 31101,
+      "sha256": "AF0832686BA0B7ACC60266EC3D2DF9F3AF44E060E53EAB1E8C42958F72F3C496"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/cfgGen/LLaMA2_7B.scala",
+      "bytes": 7579,
+      "sha256": "0B83B2E16E43AE2A331EE9A19AB947F49074EF9CEEBC0E037C29C6AAC9316845"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/cfgGen/LLaMA2_7B_MMAP.scala",
+      "bytes": 9794,
+      "sha256": "55005409DA4FC92BD6CC86B01F7C314B36FBD87B478B3332C10E3EDFA82E1587"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/cfgGen/LLaMA2_7B_MMAP_Align.scala",
+      "bytes": 9171,
+      "sha256": "F180FA66AE818BC317688A59DE1F7760DA8E2961194ECA07CE5C25FE25CE2D5D"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/convert/Int2FP16.scala",
+      "bytes": 2434,
+      "sha256": "815361181AF7666A9F5476DD554C1DFE6C5E2CF1A5A49237E9D754B787A09FB2"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/convert/Int4Int8FP16Conv.scala",
+      "bytes": 2613,
+      "sha256": "4B0471F4FC56E967A1929D7AFE4AB926A7A1290A2FE7FC5C8CF0041D19D4030F"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/core/AddEngine.scala",
+      "bytes": 16318,
+      "sha256": "ED419F79B6F4693F7BF92EA126AEEA1C1770892EF3142C214F2B53EC58803530"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/core/AddEngineBk.scala",
+      "bytes": 17666,
+      "sha256": "9C1B15555F884D3E5E7B1AC91846FBBE4D092E87F5FC48C52064139AD73A7FE3"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/core/AddEngineNew.scala",
+      "bytes": 22419,
+      "sha256": "69FEB154E398DFB04DB7A2D6B602E24EFE776CBCC4788F712F487AD1E71F8181"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/core/Fp32AccEngine.scala",
+      "bytes": 3402,
+      "sha256": "A5164CDC4847E3269FDF5A52EFC0A4B1BD99209BF3AB8909909FD27CC0103544"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/core/MulEngine.scala",
+      "bytes": 8551,
+      "sha256": "CEA6C39E49D64131E8EF6590314C291AB377F9AA9D339B1BAA6BDDAD89230FF8"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/core/Vec2to1.scala",
+      "bytes": 1002,
+      "sha256": "FA20079A4EAE45B44CD2574C63D5AB5A22E26354770ADB0F5DD437F88662FA10"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/core/VecNto1.scala",
+      "bytes": 487,
+      "sha256": "8372AA3989315BD553C593F88F06E3C875F921C1BF4BEF7061CE731041DC6CB1"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/mlp/GreedySampler.scala",
+      "bytes": 4454,
+      "sha256": "16F121524F01BA0ADDF3BBEA962ECD171E5ADA1F47ED359B449D0A64263B7B53"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/mlp/GtZeroCnt.scala",
+      "bytes": 700,
+      "sha256": "9151C3058B41723D7A3108425EA6B5D87ABF09E17BA3186261D8F809EC53C68A"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/mlp/IndexReorder.scala",
+      "bytes": 2527,
+      "sha256": "DB0279A9EA310000D29C578C4068597CF91080180EA7D4F83E410F990FFC8653"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/mlp/InsertCfg.scala",
+      "bytes": 1227,
+      "sha256": "A194AC57A74AFEC850B2C34A7E76A956CA4E9C46C2A37643CA4CC2C4E051012A"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/mlp/Silu.scala",
+      "bytes": 1206,
+      "sha256": "234B9518619AE962BFC906BA1DCD850A6E069C9873C77D373B242124E90C4818"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/mlp/SiluFp32.scala",
+      "bytes": 1233,
+      "sha256": "543AFE05821CD10F4787DA77665C9CD9B772B85FFCAA266DB2569AD1E3F7FDDA"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/mlp/UGMul.scala",
+      "bytes": 6939,
+      "sha256": "CF0F4314E12C0871A0949B337F435368C47CAE2E536FC616061B389AE972F4B9"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/mlp/ZeroFilter.scala",
+      "bytes": 2493,
+      "sha256": "940ED6E972DDF92C03F6FE425F2FD4ECFBAB36A1FA1A270CE06CFD9D07C327C0"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/norm/NormBuffer.scala",
+      "bytes": 3214,
+      "sha256": "E17768BF68CDFF2FFFDCEFBA71FED9AE8DE767F41275D820829B67DB82A14196"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/norm/RMSLayerNorm.scala",
+      "bytes": 5299,
+      "sha256": "0CEADBC5C192D4B6D565F781B1468377C94CEC9F2B0F2AB5965A17E263F454F7"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/norm/RMSNormFp32.scala",
+      "bytes": 5226,
+      "sha256": "4B129E720D4F074CFDEF2D4424AF9A3DC832069F7DDEC74DAD5C59F2FEF47C3F"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/norm/SquareSum.scala",
+      "bytes": 2061,
+      "sha256": "6D2B71DEDF1C249818774C47496B4D10F918FA9D8BB014069E6EB8CDF0F1CD61"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/quant/FindRange.scala",
+      "bytes": 2032,
+      "sha256": "92FD9D0E1DDE20190393C8B3DCE5478CE7B724BD54FE4DC1491F7193B8E2E11E"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/quant/GetScaleZero.scala",
+      "bytes": 2739,
+      "sha256": "2EA763DA56448A6BC78E6ECFBB40B26786425CE4F671F52D965CBB5F2EDAFDD5"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/quant/LinearQuant.scala",
+      "bytes": 1416,
+      "sha256": "76B62871803D69A912F770A901F2CD5FDCE2C7B645472AFF4D5A8DED3BEF5674"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/quant/QuantWrapper.scala",
+      "bytes": 4300,
+      "sha256": "4FD494F9DAE0CA88214182524529B21E9E0F05838A23D54084A968C133B01F75"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/quant/QuantWrapperTest.scala",
+      "bytes": 3313,
+      "sha256": "3070D7447EFF6D08749DA8DBF7268DF49F15C6E15A08404D6304B3283D1C9083"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/residual/ResidualBuffer.scala",
+      "bytes": 4042,
+      "sha256": "0BF4EAB9584FEF612AB6E35C2EF4E82ECE54E3A31D03EF8629546547563573C7"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/residual/SerialResAdd.scala",
+      "bytes": 3902,
+      "sha256": "637ADBA6E4C3AA295EE42AC03E455CC88DEEEC68DDA20E3C7D4ED599D71B3510"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/rope/CosSinGen.scala",
+      "bytes": 2387,
+      "sha256": "408BBBD8D63920FD59AD1C5EFAA4EC3E4AED03D91C7700128F60835D8C837479"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/rope/CosSinGen32.scala",
+      "bytes": 2395,
+      "sha256": "42FA454BBBC0493F751F774FD36E6B1105B7B0999F56D780CA90F45328456DE8"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/rope/CosSinIndexGen.scala",
+      "bytes": 1928,
+      "sha256": "AA4AF2E383E3B35BEE653AA6D7AB8529CA4B954A9E278DAAAA7489F759801960"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/rope/InvFreqRom.scala",
+      "bytes": 925,
+      "sha256": "F2D4A351A6CB7B20BEF0818AF73F46D6ACE7288AA1C0502616A982D47B8DBC78"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/rope/RoPERotate.scala",
+      "bytes": 2179,
+      "sha256": "48D7833A8E219D15524CF4B0F48D0A976BD49CE72148DB7B72CB8265E41ED57E"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/rope/SerialRoPE.scala",
+      "bytes": 3576,
+      "sha256": "6FB93F1D973E175A9C318B7EA952277B6A1D100C67D3685251BD9991FA2AD9BF"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/rope/SerialRoPE32.scala",
+      "bytes": 3533,
+      "sha256": "1EE77C05240C4EF1CF5F4BF08CD156207CE7AF2E027AC68641E02564349313DB"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/rope/SerialRoPENew.scala",
+      "bytes": 3459,
+      "sha256": "60254791F9017D5A2FD6E9A1487ED6BE88A7E7A0EC7C91B0D5B7C557ACBE44DA"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/schedule/LLMCfg.scala",
+      "bytes": 3914,
+      "sha256": "2281EA62DCB1B32FAFB6301FD0388144FABEED1E7A1809662A7A50AFBC3A8E5C"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/schedule/MemCmd.scala",
+      "bytes": 216,
+      "sha256": "8DEFAD3EDF19BAB17AC4BCC9D5F1E4469077665B56BE6D0701B6AF060B50944A"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/AddressRemap.scala",
+      "bytes": 924,
+      "sha256": "FDFA897302778CE1329A0773845B83B40E6287555DFCFDE28D220D20CB222B32"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/AllGatherSubMod.scala",
+      "bytes": 4294,
+      "sha256": "DCBA35E51B084D5E41D8FC5E8CE6C99641146C4AA584178B6481A6113AE33C19"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/AllGatherSubModNew.scala",
+      "bytes": 4523,
+      "sha256": "2CB800F962872C47EE056725F93514F1FE94E132A9567E4F3848B7A55727D426"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/AttnSubMod.scala",
+      "bytes": 5871,
+      "sha256": "2520062CBE1C05E2701A9C63A7A46A798300E1C056D2298D502DF99D825F3293"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/AxiLiteCtrl.scala",
+      "bytes": 6756,
+      "sha256": "1E75E40D0351D360A46368DC6697C7502682BB400A034642E397BB12769F8784"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/BusInSubMod.scala",
+      "bytes": 8813,
+      "sha256": "FA02E3D74292DC6961B7CED9C62DAB9E485A2B77C9694C97B9D11AEA57C07D37"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/BusInSubModNew.scala",
+      "bytes": 11335,
+      "sha256": "99104BCC78BFECF7032BC54735561C3AC86AE862222A9BE8843434704CECA9C1"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/CoreSoftReset.scala",
+      "bytes": 412,
+      "sha256": "C9E59E340C66A57DC5E463D60F19D9CA9635542B6B7262D108E202964D739E0A"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/DataPath.scala",
+      "bytes": 38755,
+      "sha256": "54335B8B99CB462C698FEE7D4DB2D614A675BE187309EFDB6C7E55492EC53EC8"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/DataPath_xN.scala",
+      "bytes": 14870,
+      "sha256": "CF9D3A47B0987ED8BC075D0C0A17C8542707B06EB81E4A003E7136648873C7F8"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/EdgeLLMInst.scala",
+      "bytes": 8552,
+      "sha256": "D7886FB8655CB26E1AA5A589A0FD199F54A822867B1F540F6B76112E263808A8"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/GlobalStateGen.scala",
+      "bytes": 5579,
+      "sha256": "C0D1A9E2E49897EC74BF697BA612454E77E47D28F37D368A839825C63C828BDF"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/MulAddEngine.scala",
+      "bytes": 3516,
+      "sha256": "4496710AFDE8D951477941BA37914F95D5F8C3A48E3B68F4B3AC129E29AA0619"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/MulAddEngineNew.scala",
+      "bytes": 4092,
+      "sha256": "046B74894B3F017E425E1D67B5F84E2B8AF83876FD2C457CB0A9BC74D5FD7878"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/MulAddSG.scala",
+      "bytes": 4862,
+      "sha256": "216FBF93957732B8B35FC975BCF25050E262446999F9452CC93918CA9A7A375F"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/MulAddSGNew.scala",
+      "bytes": 7899,
+      "sha256": "C670AF2119EF8898B6F5EC714EB79238D657AD35A016D0A6440B213789EE9A62"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/NormSubMod.scala",
+      "bytes": 3055,
+      "sha256": "C3E54FDA4E5D1EE821B5052C7BD0DB244CADF362CBAE92A17671DE53372E238D"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/NormSubModNew.scala",
+      "bytes": 4318,
+      "sha256": "44167D677E36ACA3E89378A0F9EC9AB940C0821B6C875472D70FC6B6CAACC1CB"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/ScalarOutSubMod.scala",
+      "bytes": 3122,
+      "sha256": "31512994195E3690C575D1625E90C736C3E7381794B429EBF41B21E4DBB8E651"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/StateGen.scala",
+      "bytes": 6587,
+      "sha256": "EAD0C5814AD7ED7CB6291B7DFAB8704D5AD1E9CDBD6EC252EB4DD5D77D1C64C8"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/VecOutBuf.scala",
+      "bytes": 20641,
+      "sha256": "303D3C0F0655AC07AF77C31415D1A0B4ED833A6FB191A0D7A61D7044E12FB9E7"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/top/VecOutSubMod.scala",
+      "bytes": 5804,
+      "sha256": "163A8FCC7DCF7CC10F7B3753DA5C1D57F8A4C3483D17D9B2BC4FDD6E0880F665"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/AXIDataMoverWrapper.scala",
+      "bytes": 3671,
+      "sha256": "D8D01FCAC8491B59BBA6CCDE2720163B8B637BAB0ABB39C6E4D72126F69906AD"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/AuroraInterfaceTest.scala",
+      "bytes": 1560,
+      "sha256": "B4E8EC4CC8D30844D116291AE351A3F3CFA1DD531361C608A8DAF2E8A9E180A7"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/AxiFrame.scala",
+      "bytes": 389,
+      "sha256": "EB1AE18CB1BF0550041AA6CFF534FF9D9C42D129B68F517C2C67993C39F3118B"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/AxiStreamSpecRenamer.scala",
+      "bytes": 1200,
+      "sha256": "57511E96FA5855969846E70DE3410FD79801DAC4407F6047F7A9D046A405FD6D"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/BandwidthTest.scala",
+      "bytes": 3924,
+      "sha256": "39CBEEABF24BE51D844C2DB4610F486EC263EFE32FECFD47D474C9675001098F"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/BottleNeckFifo.scala",
+      "bytes": 915,
+      "sha256": "EC9E603BF8973BE2C760557E650A3D47BAFD09D512FB5D6CB25F38467489563A"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/ConsecutiveDetector.scala",
+      "bytes": 1347,
+      "sha256": "35570E1C2C84F26226ADCD3CB7534C11BC431595BD48B3BE7BCF73239C72FC14"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/ExpFunc.scala",
+      "bytes": 1456,
+      "sha256": "E758F34988B9AC3C609CEA42B5F015C82674DC09CAED0F2C8FAE74BB7E7B2E3D"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/FP16Util.java",
+      "bytes": 2977,
+      "sha256": "9A9989F861C48B27C5DCB94A1C4D137A7667270FF75BBCACB723F779F64607FB"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/Fix48ToFp16.scala",
+      "bytes": 993,
+      "sha256": "9CD9196EFDD45EC7DF1096D6C974906497DCF6B42D8BD1685EBA348AB071DB43"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/FlowAddLast.scala",
+      "bytes": 289,
+      "sha256": "5392225097369443379A3BFB73E0B9C8A6E65BFD03009714495B7D6CCBFEF6D7"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/FlowFragmentAlign.scala",
+      "bytes": 1002,
+      "sha256": "083396DF76D8F23102113ADBD285416D23F1D975E2E628A42B240200F09DA005"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/FlowLastAlign.scala",
+      "bytes": 571,
+      "sha256": "06D2F62176E42FB5C6DD63B6DB332E888A4E870BCBF18AD0ED666096D5B90BA1"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/FlowThrowLast.scala",
+      "bytes": 259,
+      "sha256": "AE033B501B24284B9070568B40BF780E1026D599861DD2B8F1E7760A863D33A2"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/Fp16Pow2.scala",
+      "bytes": 2296,
+      "sha256": "BCB64D19AD74068271F6487E6090226324F4F7AE470B8A8DB06F0D40A4493CC7"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/Fp16RepetitionPenalty.scala",
+      "bytes": 2634,
+      "sha256": "674ACEEEBB322B46E68210E13C3E666226E56BF25BC463B71CF2A2303FE8BB8B"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/Fp16ScaleDown.scala",
+      "bytes": 828,
+      "sha256": "378AD6CA5C50E1FBE21E2FAA3E10658192F98B80D2F1EF34F78AC6BB5F7BF8D1"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/Fp16ScaleUp.scala",
+      "bytes": 621,
+      "sha256": "C7578F9B5E081562989033DDA1FA7B19B917805E24CF7C9E726651EE378C7166"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/Fp16ToFix24.scala",
+      "bytes": 500,
+      "sha256": "7CB03B2723A11B3A76F33767FFBA2F14F368F8EC83DC09800056E9ECC9476CF0"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/Fp32ScaleDown.scala",
+      "bytes": 543,
+      "sha256": "90F95CD9E360A82BE9E94F02A5FBFED15C26649ED32D10A185BA928D9106BC38"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/GenAxiDataMoverCmd.scala",
+      "bytes": 4574,
+      "sha256": "8C6D3A856B46E7D1B72FE65793C83BEB4C136A3C1C028A6E33C71D5BF527C962"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/GenSplitAlignTransfer.scala",
+      "bytes": 2574,
+      "sha256": "3CC54665230F13D7F22A14924319391A7628EF8CB239AD6299D0CA56D26D96A9"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/HBMAXIBundle.scala",
+      "bytes": 1790,
+      "sha256": "B8AB00D2F8BD9909B3203FED0414A3D2B33C5E6B0EDAB8696CC5474CFE4085DC"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/HBMCmdGen.scala",
+      "bytes": 1473,
+      "sha256": "F0905511DEF80DCF25BDE1FE79D9DA0E9C2C42579DEC77501E468A490949D1CC"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/HBMWrapper.scala",
+      "bytes": 3482,
+      "sha256": "96C65DB0F7276C55A0936D9EF0B2C5427BFD41E126790A227F590FE00C72CA57"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/LUT2.scala",
+      "bytes": 265,
+      "sha256": "59CD4A3682A4A422E548D935FF82E1154E11899C6CE4621A9B7080FEF330D2E9"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/LUT3.scala",
+      "bytes": 269,
+      "sha256": "B5CEB8F8F698FF8B5FCBF5B40D29BBC5E22E959AFC6B4F2D1FA90547CF8D4DA6"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/LUT4.scala",
+      "bytes": 274,
+      "sha256": "D1C00605E176AFCCCF519FF526348943F46B8CB353CF3A74828F2419ED0AABCF"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/LargeBankCycleFifo.scala",
+      "bytes": 1230,
+      "sha256": "F5D35D594C1BC9DDD8FAAFC066D937D35FB6D12162360EFB2AAA5B598469B2AE"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/LargeBankFifo.scala",
+      "bytes": 2034,
+      "sha256": "9B2536D7BADA2A0CED72FCFA50611F66BFD2C0E7F19001F2EA0FD31C403BD696"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/LargeBankFragmentFifo.scala",
+      "bytes": 1739,
+      "sha256": "366F7475DF7E734E28CBE88E4F2C122305188C093FF781AF46F35E6BB90C5BF6"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/LargeBankShareFifo.scala",
+      "bytes": 1991,
+      "sha256": "D9DF2DE8FDF2315C6999F61D1B763D86ED718B41865945C30A4EEB2FDEEABA93"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/Linked.scala",
+      "bytes": 990,
+      "sha256": "72D5A383BF077E0B189FBA8EE2F20711A23B23A06D1D5CACE2859EEFD856B80E"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/LoopsCntGen.scala",
+      "bytes": 2620,
+      "sha256": "74D26AF8496B770991894771004BEFDDD031F31AAA420CB42BFEEF274C714659"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/MUX_Primitive.scala",
+      "bytes": 435,
+      "sha256": "9FA42A96B2748DF2C49F25E3C52136C05F5304CAADE95BF3AA8623BD96A17250"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/MemRdPort.scala",
+      "bytes": 344,
+      "sha256": "91A4BA86C8DCAD2F774311265014A0A21F2B2560D05854B81C920A8D87A3F247"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/MemWrPort.scala",
+      "bytes": 252,
+      "sha256": "62B3B492220EE6633335C9E1D767F77E0CC82B6E991021655C90ECFDAAFAB73C"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/NodeFIFO.scala",
+      "bytes": 1155,
+      "sha256": "E2B904BC65F126FC4407E01D0E4A318E1983433D42E79C8B715A0331B5A2024A"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/SRLC32E.scala",
+      "bytes": 416,
+      "sha256": "F494952F532ABB417B5847B9D2339BCBC1C5A275D13E6D5F9A81D087AAA1ACC7"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/ShareFifoCtrl.scala",
+      "bytes": 6090,
+      "sha256": "ABA144B4FD14393697D4DAD2D36ECF85FBC621F8998AE1DE7B68EEE45A7F18C1"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/SimpleDualPortRam.scala",
+      "bytes": 2852,
+      "sha256": "7F6D1197F4A4EE7A00D84A5C190DD2FEF096953C4BE3E2B3D381F80E096586C9"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/SplitAxiDatamover.scala",
+      "bytes": 5575,
+      "sha256": "87EC3AF410CB6811284B1FF5508B1DD5E01480AF521647A9DE5F00B42CFE2EE1"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/SplitAxiDatamoverCmd.scala",
+      "bytes": 1498,
+      "sha256": "FD700F7D65D920AF180FA4A1E322743F9F523202F52D164BE547147A113F13BA"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/SplitAxiDatamoverMonitor.scala",
+      "bytes": 6291,
+      "sha256": "5EFD93A96EF5D102E17479EE196E8BBB8B5A33238519E22E5549B6824D4D9823"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/StreamAxiFrameFifo.scala",
+      "bytes": 2001,
+      "sha256": "FFD3C25D68D5790DEA1589236656C61B81B5AC7C19A9162E7755760D6F29513C"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/StreamCycleFifo.scala",
+      "bytes": 3138,
+      "sha256": "494AB5831B1426AD11936B965F8BB77CF6BCE890AF22614DFE779FCCAC36B01B"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/StreamCycleFifoCtrl.scala",
+      "bytes": 3423,
+      "sha256": "9391DE1834F399D48934B651F92427647A7EC13849FEA7B859CD1607DDE83A3C"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/StreamDeMuxByCfg.scala",
+      "bytes": 1032,
+      "sha256": "A635CD66508700A557FA2E51C76B72F1D2F7E13CDD4E1F777049FE19FD74F681"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/StreamDeMuxByTag.scala",
+      "bytes": 641,
+      "sha256": "1B7944CB283D6E5B40E4C0677177F93C62FE649E3E9347E568B58312169EDF26"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/StreamFifoCtrl.scala",
+      "bytes": 5604,
+      "sha256": "85A2F761685D9BC8F3F8ED96D5D20FD533C21CD6C68581BD5767EBF590827F5E"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/StreamFifoPipe.scala",
+      "bytes": 6595,
+      "sha256": "CF085DAC9176DEDC6970CBB54208CAAA4154131BBBD7010FE3D2D0C064BF88E8"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/StreamFifoVldProbe.scala",
+      "bytes": 6637,
+      "sha256": "B1A2E3F8B5F0DE0A3DAA9EC3B5CF271582EC562F8F195F733E6845783A3CDFB0"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/StreamMuxByCfg.scala",
+      "bytes": 1029,
+      "sha256": "05D67EDD32A7593CC86C5986EAC73C9EEA780505694D0898E2AE0DAA7754F110"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/StreamRepeat.scala",
+      "bytes": 817,
+      "sha256": "D2FAF792D10F854C9726CDF9B291C2425051CF82FF2A172C9A48FC13CC07683C"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/StreamingRom.scala",
+      "bytes": 801,
+      "sha256": "4E1D09B4FFB4B4D36F594147737156FAF7E1B134AD352BFB011662DB3DECE57B"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/StridedAddrGen.scala",
+      "bytes": 1114,
+      "sha256": "795BBE78B41496EAD25D37BBF9DA28653AE3E411A64987F9828FCC4B107DAC17"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/URAM16x16384Fifo.scala",
+      "bytes": 1457,
+      "sha256": "A8A43F78F92046C9D3B21DD970D02CFE105005B5037637585E0548B0105D0D06"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/VectorSnapshot.scala",
+      "bytes": 2191,
+      "sha256": "7C920FE4A479ACB72A70B6EDACB3FA91E9AC2A87C019AFC2FAC5014B7435A764"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/XilinxFloatIPCollection.scala",
+      "bytes": 27958,
+      "sha256": "2CC0F292EF96A05E61F664DBD8330C99DB8F4CFAF0692317342E1044A99AA5CD"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/XilinxFloatIPFlowIO.scala",
+      "bytes": 1940,
+      "sha256": "4F9BB782CF3E3750D451C0CD4CDC37ED1FA3B83C71C5BC19A72D8335095479A4"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/XilinxFloatIPFlowIOSim.scala",
+      "bytes": 2304,
+      "sha256": "EC62BF43F6EBADB912ED3509650E10E34FE69F868AC29D89B4E70D6D5EDE4FFE"
+    },
+    {
+      "path": "llama-fpga/scala/src/main/scala/util/XilinxFloatIPStreamIO.scala",
+      "bytes": 1810,
+      "sha256": "13BCA6EE3AAA2EDC6908B359B6E39C3BD1C1C623408608F208C14497AE72F118"
+    },
+    {
+      "path": "llama-fpga/scala/src/test/resources/kv_metadata_burst_tb.sv",
+      "bytes": 3926,
+      "sha256": "5E49AF60D1CCC03F85513AA892533F05081368A188C41D02975FB7A52BDF249A"
+    },
+    {
+      "path": "llama-fpga/scala/src/test/resources/repetition_penalty_tb.sv",
+      "bytes": 637,
+      "sha256": "F697FD693CE5E6AAB0E935014E33D29F4E57169F2D5E7C4AE6C1EF10465BFB7A"
+    },
+    {
+      "path": "llama-fpga/scala/src/test/resources/sampler_policy_tb.sv",
+      "bytes": 2300,
+      "sha256": "38C3CA15C24AC691C939203EC0D2628D6D6EE420C0FC93A3B31C2D4C5E0283AF"
+    },
+    {
+      "path": "llama-fpga/scala/src/test/scala/busdemux/KvMetadataBurstHarness.scala",
+      "bytes": 3018,
+      "sha256": "33B2B7D9D9E119E95CC37B2C9025D944C1134C550B0ECBBD3D3BD2D1F4DCE63C"
+    },
+    {
+      "path": "llama-fpga/scala/src/test/scala/mlp/RepetitionPenaltyHarness.scala",
+      "bytes": 418,
+      "sha256": "BE4FEDB3D574F712F80C26E53776996B39A74047FF173FCC79A6796774DF225A"
+    },
+    {
+      "path": "llama-fpga/scala/src/test/scala/mlp/SamplerPolicyHarness.scala",
+      "bytes": 1791,
+      "sha256": "7F88C7E94B2A1044C087E76B25DDF14E978311DE8B3B0C7C771512B697655955"
+    },
+    {
+      "path": "model/DOWNLOAD_METADATA.json",
+      "bytes": 1351,
+      "sha256": "1958B1F109D1672C516E6131F77994427EB3D442520499761BCFCAA366514CB7"
+    },
+    {
+      "path": "model/SOURCE.json",
+      "bytes": 1745,
+      "sha256": "CFB39F022489B6E058D63D68334C149E791ADD5EAF7379C6EE0B918B2EDD8984"
+    },
+    {
+      "path": "model/environment_observed.json",
+      "bytes": 1271,
+      "sha256": "71A604DC63B272142C6A9C4BF8B6766D091E737EFAF53CC981ACC0714F743E51"
+    },
+    {
+      "path": "model/requirements.txt",
+      "bytes": 145,
+      "sha256": "F64FFCA4AE713577B97565A8FAE500FB89983FA7DB68584C5C4E069BAFB407F7"
+    },
+    {
+      "path": "reference_build/build_core_ooc.tcl",
+      "bytes": 2687,
+      "sha256": "F74935D464A3BA6788241D1DF86BEE0CB5D1F01271FBFE148FAF29B18DA90AE0"
+    },
+    {
+      "path": "reference_build/build_full_system.tcl",
+      "bytes": 1320,
+      "sha256": "C4A91321477CB43E5B9CFA38D90A0D588688C720E6E645F072B0EBACCC566090"
+    },
+    {
+      "path": "reference_build/build_round55_decode.tcl",
+      "bytes": 1325,
+      "sha256": "E5DD20AC0340570EB5D711205AA624EB8DEF305F376F51F2603151A3F323D9C3"
+    },
+    {
+      "path": "reference_build/create_full_system.tcl",
+      "bytes": 4585,
+      "sha256": "F7D26C7FADA6C41E8E00CD1A9D1B2CC312BFEADF69C171847BC8B9B9E93938F9"
+    },
+    {
+      "path": "reference_build/finish_round55_decode.tcl",
+      "bytes": 1321,
+      "sha256": "B4C18F7DE38855655BBC807EF3A2C22FF0DF3CC93CDED5BD912DAB1F2870D38C"
+    },
+    {
+      "path": "reference_build/software/build_round55_chat.ps1",
+      "bytes": 4885,
+      "sha256": "83182292100C0BB6B3BE5F8D29D0EB2B7216942D7F6D1A34DC31413118F4D6D3"
+    },
+    {
+      "path": "scripts/build.ps1",
+      "bytes": 2880,
+      "sha256": "F9C00B1AA7BD54C437DBFF28F9406490C554013A5248D78576585BE524A1833F"
+    },
+    {
+      "path": "scripts/build_software.tcl",
+      "bytes": 1477,
+      "sha256": "F91D11B96F30AAA645D3EEA22F304D9E4EC139D32F1ACFAF6741F964ADAFC25F"
+    },
+    {
+      "path": "scripts/compare_rtl.py",
+      "bytes": 991,
+      "sha256": "B4D3A5CA5E6D82BAC69F6BACF08AF20E9EE7239410C361409A2E1FCFC48BEFF5"
+    },
+    {
+      "path": "scripts/eject_sd.ps1",
+      "bytes": 1497,
+      "sha256": "4D72222302A5DC46EA6F327510023B767242090E950FA26D1A47B20713C36608"
+    },
+    {
+      "path": "scripts/package_boot.py",
+      "bytes": 5583,
+      "sha256": "9A4F685A5FBE0086AEC69FD8E57205584D294047B44A4E4949C1C69B3F81BB89"
+    },
+    {
+      "path": "scripts/rebuild_model.py",
+      "bytes": 2958,
+      "sha256": "FFD005E8E6B3FA9B1B1979B53D87D44384FCB1C3C1FB6542956D9A247F33D871"
+    },
+    {
+      "path": "scripts/test_board.ps1",
+      "bytes": 1852,
+      "sha256": "8829C5C3815AFB96361F2B40B2BFE7CD00808C5B1EE05C4F7C8DE28EC609F9C5"
+    },
+    {
+      "path": "scripts/test_decode.ps1",
+      "bytes": 3815,
+      "sha256": "A96CACEE9E16A7A04A578E2D9BFC5B8F2D0B40B13A24EE38AB7178F404ED54FD"
+    },
+    {
+      "path": "scripts/verify_draft.py",
+      "bytes": 4089,
+      "sha256": "DEE2884EF4DE64A8A22AF5EB5739A72CC4EEE69367A500FCB74381DAAA08C77C"
+    },
+    {
+      "path": "scripts/write_sd.ps1",
+      "bytes": 2718,
+      "sha256": "9D62C70B827FE9611A63D37DC2E766795501C3A7E03C0644F438D15E66BD59BD"
+    },
+    {
+      "path": "tests/generated/RepetitionPenaltyHarness.v",
+      "bytes": 8367,
+      "sha256": "F8CD5D1786082F9C45BD4ABE0F38F20BF280689C210AB030CD71C0DCADE94A83"
+    },
+    {
+      "path": "tests/generated/SamplerPolicyHarness.v",
+      "bytes": 73894,
+      "sha256": "19505E02A9AE3D77F80EBC5443A300BECD35DB36E2F0EF9F3316E180FFEE80AC"
+    },
+    {
+      "path": "tests/generated/SamplerPolicySmallHarness.v",
+      "bytes": 73751,
+      "sha256": "416D37006AC27B6A0AFDE55EAACD1394F9261A85F6DE53205F9B81EB6A59C100"
+    },
+    {
+      "path": "zynq7035_port/model_layout_zynq7035_1b.json",
+      "bytes": 741,
+      "sha256": "9CE956CEE0F0BA9D7EF9D62A96D8FCDEF8AC38608ECFCD908BA9B595BF77E1B3"
+    },
+    {
+      "path": "zynq7035_port/rtl/DataPath_xN.v",
+      "bytes": 1716765,
+      "sha256": "346B550CB7650D922B096F51F2A41DCD10699C76C70795250DA6A5131B09FB45"
+    },
+    {
+      "path": "zynq7035_port/software/lscript.ld",
+      "bytes": 6303,
+      "sha256": "9940BA27EC232CCF8F11C1FF91B1BE118192FEEEFC91AE19605423BF047047BB"
+    },
+    {
+      "path": "zynq7035_port/software/round54/analyze_board.py",
+      "bytes": 5457,
+      "sha256": "49FFB3BFF9A97A9A50ED5C1CE0A2F5592BB3425D9B9C887F766A8CA55C91306A"
+    },
+    {
+      "path": "zynq7035_port/software/round55/analyze_board.py",
+      "bytes": 3943,
+      "sha256": "A64C7305ABDC922FB74A2EBC096023E335C91A10DE0906D8A789E6C7FCECF889"
+    },
+    {
+      "path": "zynq7035_port/software/round55/chat_uart.ps1",
+      "bytes": 3203,
+      "sha256": "1FC13BC3911C34A99339ABC7C8AD3AFED456C1197E402DAFEB09CAF8D1515E11"
+    },
+    {
+      "path": "zynq7035_port/software/round55/main.c",
+      "bytes": 30596,
+      "sha256": "4CB5CBD49BA4A983DC44A7359E8C3E0CD624F79636950772DBB05C3F2B56204E"
+    },
+    {
+      "path": "zynq7035_port/software/round55/prepare_penalty_fixture.py",
+      "bytes": 719,
+      "sha256": "E12A452B5477BE09D9E194F763B9043ADB2B85E8A055F5F909D270577B0F8ED5"
+    },
+    {
+      "path": "zynq7035_port/software/round55/prepare_sampler_fixture.py",
+      "bytes": 2422,
+      "sha256": "0042CBCD39FC72F490BEA961645408712F7D5FA96DB217AD6CCE49507C5FCF5D"
+    }
+  ]
+}

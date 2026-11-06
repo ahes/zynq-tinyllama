@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# xsim v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Nov  5 23:11:30 2026
+# Process ID: 36600
+# Current directory: E:/suanfa_liob/LLM/github_release/zynq7035-tinyllama-repro/build/decode_regression/penalty
+# Command line: xsim.exe -log simulation.log -mode tcl -source {xsim.dir/decode_test/xsim_script.tcl}
+# Log file: E:/suanfa_liob/LLM/github_release/zynq7035-tinyllama-repro/build/decode_regression/penalty/simulation.log
+# Journal file: E:/suanfa_liob/LLM/github_release/zynq7035-tinyllama-repro/build/decode_regression/penalty\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/decode_test/xsim_script.tcl
+# xsim {decode_test} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+REPETITION_PENALTY_EXHAUSTIVE_PASS count=65536
+$finish called at time : 65536 ns : File "E:/suanfa_liob/LLM/github_release/zynq7035-tinyllama-repro/build/decode_regression/penalty/repetition_penalty_tb.sv" Line 16
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Nov  5 23:11:34 2026...

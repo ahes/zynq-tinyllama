@@ -1,0 +1,21 @@
+﻿[
+    "/probe",
+    "/reset",
+    "hello?",
+    "nice",
+    "你叫什么",
+    "/reset",
+    "用中文回答: 2+2=?",
+    "/reset",
+    "Answer briefly: what is 2+2?",
+    "/reset",
+    "What is the capital of France?",
+    "/reset",
+    "Write a complete C program that prints Hello World. Include stdio.h, main, printf, and return 0.",
+    "/reset",
+    "Remember the word apple. Reply briefly.",
+    "What word did I ask you to remember? Reply briefly.",
+    "/reset",
+    "List 30 useful programming tips. Explain each tip in one sentence.",
+    "/probe"
+]

@@ -1,0 +1,130 @@
+{
+  "scope": "measured_board_vs_weight_quantized_HF_reference",
+  "prompt_ids_match": true,
+  "prompt_count": 33,
+  "board_total_count": 128,
+  "captured_board_ids": [
+    10994,
+    29991,
+    306,
+    29915,
+    29885,
+    263,
+    8444,
+    20255,
+    29892,
+    322,
+    306,
+    29915,
+    29885,
+    10932,
+    304,
+    8293,
+    393,
+    366,
+    1476,
+    590,
+    3517,
+    2643,
+    8444,
+    29889,
+    306,
+    29915,
+    29885,
+    10932,
+    304,
+    8293,
+    393,
+    366,
+    1476,
+    590,
+    3517,
+    2643,
+    8444,
+    29889,
+    306,
+    29915,
+    29885,
+    10932,
+    304,
+    8293,
+    393,
+    366,
+    1476,
+    590,
+    3517,
+    2643,
+    8444,
+    29889,
+    306,
+    29915,
+    29885,
+    10932,
+    304,
+    8293,
+    393,
+    366,
+    1476,
+    590,
+    3517,
+    2643
+  ],
+  "first_different_output_index": 18,
+  "board_token": 1476,
+  "reference_token": 11188,
+  "reference_top10_at_first_divergence": [
+    {
+      "id": 11188,
+      "text": "appreciate",
+      "logit": 16.25
+    },
+    {
+      "id": 1476,
+      "text": "found",
+      "logit": 16.234375
+    },
+    {
+      "id": 29915,
+      "text": "'",
+      "logit": 16.109375
+    },
+    {
+      "id": 1284,
+      "text": "find",
+      "logit": 15.625
+    },
+    {
+      "id": 27849,
+      "text": "enjoyed",
+      "logit": 14.4140625
+    },
+    {
+      "id": 13389,
+      "text": "enjoy",
+      "logit": 14.3671875
+    },
+    {
+      "id": 7556,
+      "text": "appreciated",
+      "logit": 13.75
+    },
+    {
+      "id": 763,
+      "text": "like",
+      "logit": 13.6171875
+    },
+    {
+      "id": 995,
+      "text": "value",
+      "logit": 12.9453125
+    },
+    {
+      "id": 526,
+      "text": "are",
+      "logit": 12.921875
+    }
+  ],
+  "board_choice_reference_rank": 2,
+  "board_choice_reference_logit": 16.234375,
+  "reference_winner_margin_over_board_choice": 0.015625
+}

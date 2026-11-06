@@ -1,0 +1,15 @@
+Time resolution is 1 ps
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=0 result=10 legacy=10
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=1 result=20 legacy=10
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=2 result=5 legacy=5
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=3 result=6 legacy=5
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=4 result=31999 legacy=31999
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=5 result=10 legacy=10
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=6 result=31999 legacy=31999
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=7 result=31999 legacy=31999
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=8 result=2 legacy=2
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=9 result=2 legacy=2
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=10 result=11 legacy=11
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=11 result=0 legacy=0
+SAMPLER_POLICY_PASS vocab=32000 rows=12
+$finish called at time : 3880870 ns : File "E:/suanfa_liob/LLM/llama-fpga/scala/src/test/resources/sampler_policy_tb.sv" Line 63

@@ -1,0 +1,47 @@
+{
+  "repo_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+  "source_url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0/tree/fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+  "revision_evidence": "Local Hugging Face download metadata; model identity also checked by final FPGA image hash",
+  "local_seed": true,
+  "files": [
+    {
+      "name": "config.json",
+      "bytes": 608,
+      "sha256": "486BEDDA3A6988332E60D9638A09CA4B260D34EBCF1B19E22CF3B140B63D8FE9"
+    },
+    {
+      "name": "generation_config.json",
+      "bytes": 124,
+      "sha256": "18046D04F5BD8B4998095ECABDD17A1BF0053D9ACDCCEAD4A05BE4A3575F3C5C"
+    },
+    {
+      "name": "model.safetensors",
+      "bytes": 2200119864,
+      "sha256": "6E6001DA2106D4757498752A021DF6C2BDC332C650AAE4BAE6B0C004DCF14933"
+    },
+    {
+      "name": "tokenizer.model",
+      "bytes": 499723,
+      "sha256": "9E556AFD44213B6BD1BE2B850EBBBD98F5481437A8021AFAF58EE7FB1818D347"
+    },
+    {
+      "name": "tokenizer.json",
+      "bytes": 1842767,
+      "sha256": "BCD04F0EADF90287BD26E1A183AC487D8A141B09B06AECB7725BBDD343640F2E"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 1289,
+      "sha256": "7B41BA7D0EB91E77914CA3DAFDE559EA3E19878769B7E68409E89BED5222E77A"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "bytes": 551,
+      "sha256": "82D96D7A9E6CED037F12394B7EA6A5B02E6CA87E0D11EDAA8D60D9BE857CE7DB"
+    }
+  ],
+  "expected_model_bytes": 937803776,
+  "expected_model_sha256": "2C24393F3F0715C231C35DC1EDD1851EC3ED45AB5ACC0C753A632A944CE1A5F0",
+  "expected_tokenizer_sha256": "8FE75741DA265962CCB42E4EF257816E75ECD6BD20D290FDB5ABB3FACF715326"
+}

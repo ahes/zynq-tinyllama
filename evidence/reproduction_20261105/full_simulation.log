@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# xsim v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Nov  5 23:11:42 2026
+# Process ID: 49384
+# Current directory: E:/suanfa_liob/LLM/github_release/zynq7035-tinyllama-repro/build/decode_regression/full
+# Command line: xsim.exe -log simulation.log -mode tcl -source {xsim.dir/decode_test/xsim_script.tcl}
+# Log file: E:/suanfa_liob/LLM/github_release/zynq7035-tinyllama-repro/build/decode_regression/full/simulation.log
+# Journal file: E:/suanfa_liob/LLM/github_release/zynq7035-tinyllama-repro/build/decode_regression/full\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/decode_test/xsim_script.tcl
+# xsim {decode_test} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=0 result=10 legacy=10
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=1 result=20 legacy=10
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=2 result=5 legacy=5
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=3 result=6 legacy=5
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=4 result=31999 legacy=31999
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=5 result=10 legacy=10
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=6 result=31999 legacy=31999
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=7 result=31999 legacy=31999
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=8 result=2 legacy=2
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=9 result=2 legacy=2
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=10 result=11 legacy=11
+SAMPLER_POLICY_CASE_PASS vocab=32000 row=11 result=0 legacy=0
+SAMPLER_POLICY_PASS vocab=32000 rows=12
+$finish called at time : 3880870 ns : File "E:/suanfa_liob/LLM/github_release/zynq7035-tinyllama-repro/build/decode_regression/full/sampler_policy_tb.sv" Line 63
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Nov  5 23:11:47 2026...

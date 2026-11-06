@@ -1,0 +1,18 @@
+{
+  "round": 55,
+  "rtl_sha256": "79F76E083A664B16F2B347586C8D8D3F53001F7CF3475FDD976A55856C5796BF",
+  "bit_sha256": "A868389C2DBA9DF0ABC04DF784EBD7AD38BC487294DDBFB80B7BF174490BE5AA",
+  "production_sources": {
+    "llama-fpga\\scala\\src\\main\\scala\\busdemux\\AxiBusDistributor.scala": "524E1E6412BDAAAD11FE8EAFC579ABC359E557CB674A350E9D790AD2E6CD8F0D",
+    "llama-fpga\\scala\\src\\main\\scala\\mlp\\GreedySampler.scala": "16F121524F01BA0ADDF3BBEA962ECD171E5ADA1F47ED359B449D0A64263B7B53",
+    "llama-fpga\\scala\\src\\main\\scala\\util\\Fp16RepetitionPenalty.scala": "674ACEEEBB322B46E68210E13C3E666226E56BF25BC463B71CF2A2303FE8BB8B",
+    "llama-fpga\\scala\\src\\main\\scala\\top\\DataPath.scala": "54335B8B99CB462C698FEE7D4DB2D614A675BE187309EFDB6C7E55492EC53EC8"
+  },
+  "arithmetic_baseline_round": 52,
+  "metadata_baseline_round": 54,
+  "repetition_penalty": 1.125,
+  "generated_history_window": 128,
+  "model_changed": false,
+  "wns_ns": 1.049,
+  "whs_ns": 0.026
+}

@@ -1,0 +1,27 @@
+{
+  "round": 55,
+  "status": "cold_board_repetition_suite_validated_known_semantic_limits",
+  "boot": "build/round55_dialogue_diagnosis_20261101/BOOT_round55_dialogue_diagnosis_20261101.BIN",
+  "boot_sha256": "F4942B274C1CA1974EDC567992E75EFF2D48A3AF09EDBDFF3EFB91DD62DE9281",
+  "elf": "build/round55_dialogue_diagnosis_20261101/llama7035_loader_round55_chat128.elf",
+  "bit": "build/round55_dialogue_diagnosis_20261101/llama_zynq7035_round55.bit",
+  "bit_sha256": "A868389C2DBA9DF0ABC04DF784EBD7AD38BC487294DDBFB80B7BF174490BE5AA",
+  "model_sha256": "2C24393F3F0715C231C35DC1EDD1851EC3ED45AB5ACC0C753A632A944CE1A5F0",
+  "repetition_penalty": 1.125,
+  "generated_history_window": 128,
+  "arithmetic_baseline_round": 52,
+  "metadata_baseline_round": 54,
+  "known_limits": [
+    "Chinese name question still off-topic",
+    "Chinese arithmetic prompt still incorrect",
+    "Soft repetition penalty is not a guarantee against all repetitions",
+    "Single cold-boot suite does not prove general dialogue quality"
+  ],
+  "baseline_pointer_unchanged": 52,
+  "board_log": "build/round55_dialogue_diagnosis_20261101/uart_board_20261101_210346.log",
+  "board_log_sha256": "016E9A33D43E7BB32E84C8097D32FDEE3F44762A0C5BC7243226EE2260511EBD",
+  "completed_answers": 10,
+  "control_and_dma_checks_passed": true,
+  "measured_hello_nice_repetition_resolved": true,
+  "snapshot": "build/round55_board_tested_20261101"
+}

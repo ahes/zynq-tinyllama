@@ -1,0 +1,144 @@
+Zynq-7035 EdgeLLM 1.1B single-core inference loader
+Build: round55 chat128 repetition penalty 1.125 20261101; Round54 KV + Round52 arithmetic
+AXI-Lite control test passed
+0:/llm.bin: 33554432 / 937803776 bytes
+0:/llm.bin: 67108864 / 937803776 bytes
+0:/llm.bin: 100663296 / 937803776 bytes
+0:/llm.bin: 134217728 / 937803776 bytes
+0:/llm.bin: 167772160 / 937803776 bytes
+0:/llm.bin: 201326592 / 937803776 bytes
+0:/llm.bin: 234881024 / 937803776 bytes
+0:/llm.bin: 268435456 / 937803776 bytes
+0:/llm.bin: 301989888 / 937803776 bytes
+0:/llm.bin: 335544320 / 937803776 bytes
+0:/llm.bin: 369098752 / 937803776 bytes
+0:/llm.bin: 402653184 / 937803776 bytes
+0:/llm.bin: 436207616 / 937803776 bytes
+0:/llm.bin: 469762048 / 937803776 bytes
+0:/llm.bin: 503316480 / 937803776 bytes
+0:/llm.bin: 536870912 / 937803776 bytes
+0:/llm.bin: 570425344 / 937803776 bytes
+0:/llm.bin: 603979776 / 937803776 bytes
+0:/llm.bin: 637534208 / 937803776 bytes
+0:/llm.bin: 671088640 / 937803776 bytes
+0:/llm.bin: 704643072 / 937803776 bytes
+0:/llm.bin: 738197504 / 937803776 bytes
+0:/llm.bin: 771751936 / 937803776 bytes
+0:/llm.bin: 805306368 / 937803776 bytes
+0:/llm.bin: 838860800 / 937803776 bytes
+0:/llm.bin: 872415232 / 937803776 bytes
+0:/llm.bin: 905969664 / 937803776 bytes
+0:/llm.bin: 937803776 / 937803776 bytes
+Tokenizer loaded: 32000 tokens, max piece 27 bytes
+FPGA model image loaded successfully
+Interactive TinyLlama ready. UTF-8 input; /reset clears history; /exit quits.
+Input/history budget: 256 tokens; output limit: 128 tokens; oldest full turns are trimmed when needed.
+
+You> /probe
+PROBE_PAGE_0 000A0000 00000000 00000000
+PROBE_PAGE_1 00000000 00000000 00000000
+PROBE_PAGE_2 00000000 00000000 00000000
+PROBE_PAGE_3 00000000 00000000 00000000
+
+You> /reset
+[history cleared]
+
+You> hello?
+Assistant> Hello! I'm a helpful assistant, and I'd be happy to assist you with any questions or concerns you may have. Please feel free to reach out if you need anything help with. Best regards,
+
+[Your Name]
+[answer complete: eos, 49 output tokens]
+
+You> nice
+Assistant> I'm glad to hear that! I always try to provide helpful assistance, and I'd be happy to help you with anything. Feel free to reach out if you need any assistance or have any questions. Best regards,
+
+[Your Name]
+[answer complete: eos, 53 output tokens]
+
+You> 你叫什么
+Assistant> 答案是：你叫什么。
+
+这个问题，我们可以用一种比较简单的方法来解决：
+
+1. 首先，请你确定你正在使用的语言（英文或中文）。
+2. 然后，请你确定你想要回复的人（例如，你还需要回复哪些人？）。
+3. 最后，请你确定你想要回复
+[answer truncated: output limit 128 tokens reached]
+
+You> /reset
+[history cleared]
+
+You> 用中文回答: 2+2=?
+Assistant> 2 + 2 = ?
+
+En español:
+
+2 + 2 = ¿?
+[answer complete: eos, 20 output tokens]
+
+You> /reset
+[history cleared]
+
+You> Answer briefly: what is 2+2?
+Assistant> 2 + 2 = 4
+[answer complete: eos, 7 output tokens]
+
+You> /reset
+[history cleared]
+
+You> What is the capital of France?
+Assistant> The capital of France is Paris.
+[answer complete: eos, 7 output tokens]
+
+You> /reset
+[history cleared]
+
+You> Write a complete C program that prints Hello World. Include stdio.h, main, printf, and return 0.
+Assistant> #include <stdio.h>
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+[answer complete: eos, 31 output tokens]
+
+You> /reset
+[history cleared]
+
+You> Remember the word apple. Reply briefly.
+Assistant> Sure, I'd be happy to help you with that! Here's a brief reply:
+
+Reply briefly: "Apple"
+[answer complete: eos, 31 output tokens]
+
+You> What word did I ask you to remember? Reply briefly.
+Assistant> Sure, I'd be happy to help you with that! Here's a brief reply:
+
+Reply briefly: "apple"
+[answer complete: eos, 30 output tokens]
+
+You> /reset
+[history cleared]
+
+You> List 30 useful programming tips. Explain each tip in one sentence.
+Assistant> 1. Use the `print()` function to display values in a program:
+- Example: `print("Hello, World!")`
+- Tip: This will output "Hello, World!" to the console.
+2. Read and understand documentation for libraries or frameworks:
+- Example: `import numpy as np`
+- Tip: This will provide information about how to use the library or framework.
+3. Write clear and concise comments in your code:
+- Example: `def my_function(x):
+    if x > 0:
+        return x**2
+    else:
+
+[answer truncated: output limit 128 tokens reached]
+
+You> /probe
+PROBE_PAGE_0 810AA980 35496B40 35496B40
+PROBE_PAGE_1 12498F7E 95D99B31 9DF4A9B4
+PROBE_PAGE_2 A980A980 A980A980 00008102
+PROBE_PAGE_3 9032A8E3 97551413 9DF4A9B4
+
+You> 

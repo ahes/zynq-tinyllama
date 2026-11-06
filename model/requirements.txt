@@ -1,0 +1,8 @@
+torch==2.6.0
+transformers==4.51.3
+autoawq==0.2.9
+numpy==2.4.6
+accelerate==1.14.0
+safetensors==0.8.0
+sentencepiece==0.2.2
+huggingface_hub==0.36.2

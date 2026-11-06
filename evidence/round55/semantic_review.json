@@ -1,0 +1,15 @@
+{
+  "original_hello_nice_repetition_not_observed_in_this_suite": true,
+  "hello_output_tokens": 49,
+  "nice_output_tokens": 53,
+  "chinese_name_answer_correct": false,
+  "chinese_math_answer_contains_four": false,
+  "english_math_answer_correct": true,
+  "france_answer_contains_paris": true,
+  "c_program_gcc_syntax_passed": true,
+  "apple_acknowledgement_contains_word": true,
+  "apple_recall_contains_word": true,
+  "c_syntax_returncode": 0,
+  "general_dialogue_reliability_established": false,
+  "scope": "Content checks are literal/heuristic, except manually reviewed Chinese name failure; no general quality claim"
+}

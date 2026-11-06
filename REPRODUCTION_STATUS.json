@@ -1,0 +1,56 @@
+{
+  "updated": "2026-11-05T23:52:54",
+  "independent_source_tree": true,
+  "regenerated_rtl_equivalent": true,
+  "standalone_ip_configs_matched": 30,
+  "ps_config_properties_matched": 878,
+  "relocation_into_second_empty_path_verified": true,
+  "fresh_bsp_and_fsbl_built": true,
+  "software_platform_matches_implemented_hwh": true,
+  "model_and_tokenizer_exact_hash_match": true,
+  "regenerated_decode_simulations_passed": 3,
+  "clean_hardware_build": {
+    "passed": true,
+    "wns_ns": 1.049,
+    "whs_ns": 0.026,
+    "fresh_ip_build": true
+  },
+  "package": {
+    "passed": true,
+    "boot_sha256": "0B3B58C6CA2F26A7EB94786A7A6E551DCE8FCBAD7EAA1C36D76048016ACFE543",
+    "boot_bytes": 13507592,
+    "inputs": {
+      "fsbl": {
+        "path": "build/vitis/llama7035_fsbl/Debug/llama7035_fsbl.elf",
+        "sha256": "09C0E94FA873E30629B161EF4C2E28986640AA4ADAAC47B221A66A59A8054638"
+      },
+      "bit": {
+        "path": "build/hardware/system.bit",
+        "sha256": "D782540AE0ED83530992E5D64A59C0AE21EFF56996344694CEF8B23AF1505E5F"
+      },
+      "app": {
+        "path": "build/vitis/llama7035_app/Debug/llama7035_app.elf",
+        "sha256": "22DCFFC75ABD96496B5E58A3525138067C3DC368735C92CD3FACA48C55FDC845"
+      }
+    },
+    "app_entry": "0x100000",
+    "app_memory_end": "0x2d3260",
+    "model_sha256": "2C24393F3F0715C231C35DC1EDD1851EC3ED45AB5ACC0C753A632A944CE1A5F0",
+    "tokenizer_sha256": "8FE75741DA265962CCB42E4EF257816E75ECD6BD20D290FDB5ABB3FACF715326",
+    "new_fsbl_bsp": true,
+    "boot_payloads_verified": [
+      "new FSBL",
+      "new PL bitstream",
+      "new PS ELF"
+    ],
+    "software_platform_matches_implemented_hwh": true,
+    "board_validation": "pending"
+  },
+  "board": {
+    "status": "pending_physical_cold_boot",
+    "passed": false
+  },
+  "all_four_complete": false,
+  "github_published": false,
+  "upstream_code_license_requires_confirmation": true
+}

@@ -1,0 +1,48 @@
+{
+  "complete": true,
+  "healthy": true,
+  "idle_before_inference": false,
+  "last_status": "81",
+  "errors": {
+    "sticky_interr": false,
+    "sticky_decerr": false,
+    "sticky_slverr": false,
+    "axi_response_error": false
+  },
+  "counts_mod65536": {
+    "status": 43392,
+    "command": 43392,
+    "packet": 43392,
+    "response": 43392
+  },
+  "last_command_address": "35496B40",
+  "last_write_address": "35496B40",
+  "raw_pages": {
+    "0": [
+      "810AA980",
+      "35496B40",
+      "35496B40"
+    ],
+    "1": [
+      "12498F7E",
+      "95D99B31",
+      "9DF4A9B4"
+    ],
+    "2": [
+      "A980A980",
+      "A980A980",
+      "00008102"
+    ],
+    "3": [
+      "9032A8E3",
+      "97551413",
+      "9DF4A9B4"
+    ]
+  },
+  "last_write_inferred_from_unchanged_layout": {
+    "layer": 21,
+    "head": 31,
+    "region": "V",
+    "token": 173
+  }
+}

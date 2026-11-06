@@ -1,0 +1,226 @@
+
+---
+
+#  llama-fpga: FPGA-based LLM Accelerator
+
+**llama-fpga** is *(most probably)* the **world’s first open-source project** for building an **FPGA-based Large Language Model (LLM) accelerator**, capable of running **LLaMA2-7B** in **AWQ 4-bit quantized format**.
+
+This project demonstrates how to deploy modern transformer-based LLMs on embedded and data center FPGAs, offering both **research** and **educational** value in hardware-accelerated AI inference.
+
+
+##  Hardware Requirements
+
+| Hardware Platform     | Supported?  | Notes                                          |
+| --------------------- | ----------- | ---------------------------------------------- |
+| **Xilinx KV260**      | ✅  | Uses PS-side 4 GB RAM for model weights        |
+| **Xilinx ZCU104**     | ✅  | Two variants: PS/PL weight distribution        |
+| **Xilinx Alveo U250** | ✅  | Uses all 4 DDR4 channels for maximum bandwidth |
+
+**Additional Requirements:**
+
+* SD card: **≥ 8 GB**
+* For **ZCU104**, a **4 GB DDR4 (Rank = 1)** SODIMM memory module is required.
+
+---
+
+##  Repository Structure
+
+This repository includes **four hardware-specific subprojects**, each corresponding to a distinct FPGA setup:
+
+| Directory       | Platform         | Description                                                      |
+| --------------- | ---------------- | ---------------------------------------------------------------- |
+| `kv260/`        | KV260            | LLM inference with model weights loaded into PS-side RAM (4 GB). |
+| `zcu104_pl/`    | ZCU104 (PL only) | Model weights fully loaded into PL-side 4 GB DDR4 memory.        |
+| `zcu104_ps_pl/` | ZCU104 (Hybrid)  | Model weights split between PS and PL memories (each 2 GB).      |
+| `alveo_u250/`   | Alveo U250       | Uses all four DDR4 memory channels for maximum performance.      |
+
+---
+
+##  Project Contents
+
+Each subproject contains the following structure:
+
+### **1. Vivado Project**
+
+A complete Vivado design implementing the FPGA system architecture, including DMA engines, AXI interfaces, and accelerator logic.
+
+### **2. XSA File**
+
+The exported `.xsa` hardware definition file, generated after bitstream creation. Used to build Vitis platforms or software applications.
+
+### **3. SDK C Source (for KV260 / ZCU104)**
+
+Contains a C file for Vitis SDK.
+To use:
+
+1. Create a **Vitis bare-metal platform**.
+2. Create a **“Hello World”** application project.
+3. Replace `helloworld.c` with the provided **SDK C file**.
+4. Build and deploy to your FPGA board.
+
+### **4. Demo Video**
+
+Each project folder includes a **demo video** demonstrating real-time decoding performance.
+
+---
+
+##  Python Utilities
+
+A **Jupyter Notebook** is provided to:
+
+* Generate binary model files for each hardware configuration.
+* Convert **LLaMA2-7B** weights into **AWQ 4-bit quantized** format.
+
+You’ll need to:
+
+1. Download the official **LLaMA2-7B** model.
+2. Quantize it using **AWQ**.
+3. Run the notebook to produce the corresponding binary files.
+
+---
+
+##  Project Contents
+
+Pre-generated binary files for different projects:
+
+BaiduPan
+
+[tkz.bin](https://pan.baidu.com/s/12k4x0m6EWh23ADSH_fFnmA?pwd=xbtj)
+
+[KV260, PS RAM only (currently buggy)](https://pan.baidu.com/s/1EGnB-p37UCJSXJ1Ts4t3dw?pwd=iar3)
+
+[ZCU104, PL RAM only](https://pan.baidu.com/s/1OpPXQReN35YIsgkfr95Jpg?pwd=i2uc)
+
+[ZCU104, PS and PL RAM](https://pan.baidu.com/s/1hUX2DBe23i6S2yb82TgMxg?pwd=hequ)
+
+[Alveo U250, Dual channel DDR4](https://pan.baidu.com/s/1JxY3DFMyPBYyCZUV_avXsQ?pwd=1jwp)
+
+[Alveo U250, Quad channel DDR4](https://pan.baidu.com/s/18qfhT0AqX_wwWzXLHV7JNw?pwd=i8dd)
+
+GoogleDrive
+
+[tkz.bin](https://drive.google.com/file/d/13M-1aShAJKDaGGEpRKctNyE5LDMLDeG6/view?usp=sharing)
+
+[KV260, PS RAM only (currently buggy)](https://drive.google.com/drive/folders/12hsunJvtLHCOnNOYfKJd9-nf2N3aIb8Z?usp=sharing)
+
+[Alveo U250, Dual channel DDR4](https://drive.google.com/drive/folders/18J-SO3gsj2KjDvtgqEmPmcemfs43g6te?usp=sharing)
+
+[Alveo U250, Quad channel DDR4](https://drive.google.com/drive/folders/1yn---glfBkRvqQJAjrF6Oc3_xH5kbfG8?usp=sharing)
+
+##  Running on Alveo U250
+
+For the **Alveo U250** configuration:
+
+* The project uses **XDMA in DMA mode**.
+* Install Xilinx’s DMA driver:
+  [Xilinx dma_ip_drivers](https://github.com/Xilinx/dma_ip_drivers)
+
+### Steps:
+
+1. Copy `load_param.sh` and `host_sdk.c` to
+   `XDMA/linux-kernel/tools/`
+2. Compile the host software:
+
+   ```bash
+   gcc host_sdk.c -o host_sdk
+   ```
+3. Run `load_param.sh` to load model parameters.
+4. Execute the binary to start decoding.
+
+>  The procedure is similar to running a standard XDMA DMA test demo.
+
+
+##  Performance
+
+### **Decoding Speed**
+
+| Platform         | Speed (tokens/s) |
+| ---------------- | ---------------- |
+| KV260            | ~5               |
+| ZCU104 (PL-only) | ~4               |
+| ZCU104 (PS + PL) | ~8–9             |
+| Alveo U250       | ~18–19           |
+
+### Demo on KV260
+
+![KV260 Demo](kv260/kv260demo.gif)
+
+### Demo on ZCU104
+
+![ZCU104 Demo](zcu104_ps_pl/zcu104demo.gif)
+
+### Demo on Alveo U250
+
+![AlveoU250 Demo](au250/alveodemo.gif)
+
+
+## Project Limitations
+
+While **llama-fpga** demonstrates a complete and functional FPGA-based LLM decoding accelerator, several limitations currently exist that users and researchers should be aware of:
+
+1. **Limited Code Documentation**
+
+   The HDL and software components are not yet thoroughly commented, which may make it challenging for new contributors or researchers to fully understand every design detail.
+
+2. **Model-Specific Design**
+
+   The accelerator is **tightly coupled to the internal structure of LLaMA2-7B**, with extensive architectural and memory optimizations tailored for this specific model.
+   Adapting the design to other models (e.g., Mistral, LLaMA3, or GPT-NeoX) would require **RTL-level modifications**, including changes to matrix dimensions, memory mapping, and dataflow scheduling.
+
+3. **Generated Verilog Readability**
+
+   The Verilog code is **auto-generated by SpinalHDL**. Although the code is not easy to read line-by-line, the **module hierarchy remains clear** and can still provide valuable insights into the overall hardware architecture.
+
+4. **Prefill Phase Not Accelerated**
+
+   Currently, only the **decoding phase** is implemented in hardware.
+   The **prefill stage** is executed token-by-token reusing the decode accelerator, resulting in slow initialization when the input context is long.
+
+5. **Context Length Limitation**
+
+   Due to restricted FPGA RAM capacity, the **maximum supported context length** is currently **1024 tokens**.
+
+6. **Single-Turn Dialogue Only**
+
+   Multi-turn conversation support is not implemented in this version.
+   The current system only supports **single-turn inference**, i.e., one user prompt followed by one generated response.
+
+
+##  Hardware Architecture
+
+Detailed architectural design and implementation details can be found in the following academic publications.
+If you use this project in your research or product, **please cite** these works:
+
+```bibtex
+@inproceedings{li2025pushing,
+  title={Pushing up to the limit of memory bandwidth and capacity utilization for efficient llm decoding on embedded fpga},
+  author={Li, Jindong and Li, Tenglong and Shen, Guobin and Zhao, Dongcheng and Zhang, Qian and Zeng, Yi},
+  booktitle={2025 Design, Automation & Test in Europe Conference (DATE)},
+  pages={1--7},
+  year={2025},
+  organization={IEEE}
+}
+```
+```bibtex
+@article{li2025hummingbird,
+  title={Hummingbird: A Smaller and Faster Large Language Model Accelerator on Embedded FPGA},
+  author={Li, Jindong and Li, Tenglong and Chen, Ruiqi and Shen, Guobin and Zhao, Dongcheng and Zhang, Qian and Zeng, Yi},
+  booktitle={2025 International Conference on Computer-Aided Design (ICCAD)},
+  year={2025},
+  organization={IEEE}
+}
+```
+
+## Related Project
+
+* **[Terafly](https://github.com/zjnyly/TeraFly)** — developed by **Jianing Zheng**, Terafly is a **multi-node FPGA-based accelerator** for cooperative LLM inference. It enables **high-throughput, low-latency execution** of large language models by distributing computation across multiple FPGA nodes, complementing single-board solutions like llama-fpga.
+
+* **[TeLLMe](https://arxiv.org/abs/2504.16266)** and **[TeLLMe v2](https://arxiv.org/abs/2510.15926)** — these works also focus on **KV260** for LLM acceleration. They target **both prefill and decode phases**, solving the **prefill speed bottleneck** and achieving efficient end-to-end ternary LLM acceleration.
+
+## Acknowledgements
+
+We would like to thank and acknowledge the following contributions:
+
+* **Karpathy** — for **[llama2.c](https://github.com/karpathy/llama2.c)**; we adapted the **tokenizer code** from this repository for our SDK driver code of the accelerator.
+* **Hongzheng Chen and Niansong Zhang** — for their paper *“Understanding the potential of FPGA-based spatial acceleration for large language model inference”* ([ACM link](https://dl.acm.org/doi/abs/10.1145/3656177)), which inspired this project and provided valuable reference data on FPGA-based LLM implementation.
+* **Renjie Wei** — for the paper *“Lightmamba: Efficient Mamba Acceleration on FPGA with Quantization and Hardware Co-Design”* ([IEEE link](https://ieeexplore.ieee.org/abstract/document/10993079)), who provided useful data and insights during this work.
