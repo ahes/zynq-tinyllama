@@ -2,10 +2,6 @@
 
 基于 [llama-fpga](https://github.com/adamgallas/llama-fpga) 的 XC7Z035 单核 TinyLlama 移植。包含SpinalHDL源码、ROM表、30个IP配置Tcl、完整BD/PS配置、裸机C、独立构建/打包/写卡/回归入口。
 
-**源码到模型、硬件、BSP、FSBL、应用和BOOT的独立目录构建已经实际执行。**
-新镜像冷启动回归待实物插卡/断电上电配合，尚未完成；旧板测记录单独保留。
-
-English: A source-based standalone XC7Z035 reproduction of the TinyLlama llama-fpga port. Hardware, software and model rebuild evidence is included. See REPRODUCTION_STATUS.json for the separate cold-boot validation status. General Chinese dialogue quality remains limited.
 
 ## 实际完成的验证
 
@@ -13,7 +9,7 @@ English: A source-based standalone XC7Z035 reproduction of the TinyLlama llama-f
 - 30个独立IP有效参数、878项PS参数一致；36个总IP、器件、top及源码路径检查通过。
 - 从零生成IP并完成综合、实现和bitstream；具体资源与时序见本次报告。
 - 从新XSA创建standalone BSP，编译应用和新FSBL；应用内存不越入模型区域。
-- 固定TinyLlama源revision，从原始权重重做GQA→MHA→FP-minmax导出；模型937803776字节，模型与词表SHA256逐项匹配原板测。
+- 固定TinyLlama源revision，从原始权重重做GQA→MHA→FP-minmax导出。
 - 从本目录Scala重新生成测试harness，三个XSim回归全部通过。
 - BOOT中的新FSBL、PL、PS载荷已逐段核验；软件平台HWH与最终实现XSA一致。
 
@@ -35,4 +31,3 @@ powershell -NoProfile -File scripts/build.ps1 -Stage All `
 
 已有模型回答质量限制仍存在：原hello?/nice循环在2026-11-01十题回归中未复现，中文名称与中文算术仍失败。不宣称通用聊天可靠，也未测得统一的tokens/s或功耗。
 
-源码及来源清单为SOURCE_MANIFEST.json。尚未上传GitHub；公开发布前仍需核实混入上游代码的适用许可。
