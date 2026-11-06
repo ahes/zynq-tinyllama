@@ -1,4 +1,4 @@
-# TinyLlama on Zynq-7035 — 独立构建工程
+# TinyLlama on Zynq-7035
 
 基于 [llama-fpga](https://github.com/adamgallas/llama-fpga) 的 XC7Z035 单核 TinyLlama 移植。包含SpinalHDL源码、ROM表、30个IP配置Tcl、完整BD/PS配置、裸机C、独立构建/打包/写卡/回归入口。
 
