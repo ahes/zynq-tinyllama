@@ -29,5 +29,4 @@ powershell -NoProfile -File scripts/build.ps1 -Stage All `
 
 工具路径按本机安装修改。需要空的build目录；权重、词表、BOOT在assets目录，不纳入源码包。当前本地原始checkpoint由已核验缓存提供，固定revision下载入口保留；本机此次未重新从网络下载2.2GB权重。
 
-已有模型回答质量限制仍存在：原hello?/nice循环在2026-11-01十题回归中未复现，中文名称与中文算术仍失败。不宣称通用聊天可靠，也未测得统一的tokens/s或功耗。
 
